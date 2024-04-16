@@ -205,7 +205,7 @@ nav, .backdrop-transitioning {
   transform: none;
 }
 .hidden {
-  display: ;
+  display: flex;
 
 }
 .menu-toggle, .menu-close {
