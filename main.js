@@ -1,7 +1,3 @@
-console.log('Proyecto inicializado!');
-
-const button1 = document.querySelector('#button1');
-
 function showMenu() {
   const navBar = document.getElementById('navbar');
   const navLinks = document.getElementById('navlinks');
@@ -27,3 +23,18 @@ function hideMenu() {
     navLinks.classList.replace('nav-transitioning', 'hidden');
   }, 500)
 };
+
+function moveCarouselRight() {
+  console.log('Working');
+
+  if (window.innerWidth >= 1024) {
+    const carousel = document.getElementById('carousel');
+
+    console.log(carousel.classList.item(2));
+  }
+}
+
+function moveCarouselLeft() {
+
+}
+

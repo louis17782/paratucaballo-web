@@ -7,16 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
+<img src="https://latendetadelcuero.com/cdn/shop/articles/Guia-explicativa-con-los-diferentes-acabados-del-cuero-La-Tendeta-del-Cuero-938.jpg?v=1680627685" alt="cueros" class="parallax">
 <body>
-  <main>
-    <header id="header">
-      <div>
-        <a href="./index.html">
-        <img class="logo" src="Imagenes/caballo-bronce.png" alt="logo del caballo">
-      </a>
-      </div>
-      <button type="button" class="menu-toggle" onclick="showMenu()">
-        <i class="fa-solid fa-bars"></i></button>
+  <button type="button" class="menu-toggle" onclick="showMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
   <nav id="navbar" class="hidden">
     <div id="navlinks" class="navlinks-container hidden">
       <button
@@ -34,12 +29,48 @@
       </ul>
     </div>
   </nav>
-</div>
+  <header id="header">
+    <div>
+      <a href="./index.html">
+        <img class="logo" src="Imagenes/caballo-bronce.png" alt="logo del caballo">
+      </a>
+    </div>
 </header>
-<div class="gallery" id="parallax">
-  <img src="https://latendetadelcuero.com/cdn/shop/articles/Guia-explicativa-con-los-diferentes-acabados-del-cuero-La-Tendeta-del-Cuero-938.jpg?v=1680627685" alt="cueros">
-</div>
-<section class="projects" class="projects-section">
+  <main>
+    <section class="categories">
+      <button type="button" title="Go left" class="arrow-left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button type="button" title="Go right" class="arrow-right" onclick="moveCarouselRight()">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="carousel">
+        <div id="carousel" class="carousel-frame carr-pos-3">
+          <div class="carousel-element">
+            <img src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0" alt="#">
+            <div class="carousel-element-info">
+              <h2>Hola Carrusel 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque explicabo repellat vel a error accusantium asperiores quisquam veritatis modi soluta vitae nobis veniam possimus nam nihil dignissimos, aut quasi.</p>
+            </div>
+          </div>
+          <div class="carousel-element">
+            <img src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0" alt="#">
+            <div class="carousel-element-info">
+              <h2>Hola Carrusel 2</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque explicabo repellat vel a error accusantium asperiores quisquam veritatis modi soluta vitae nobis veniam possimus nam nihil dignissimos, aut quasi.</p>
+            </div>
+          </div>
+          <div class="carousel-element">
+            <img src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0" alt="#">
+            <div class="carousel-element-info">
+              <h2>Hola Carrusel 3</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque explicabo repellat vel a error accusantium asperiores quisquam veritatis modi soluta vitae nobis veniam possimus nam nihil dignissimos, aut quasi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="projects-section">
 <h1>Categoria de productos</h1>
 <div class="content-grid">
   <a href="" target="_blank" class="project-title">
@@ -114,7 +145,7 @@
 <footer>
 <p></p>
 </footer>
-<script src="main.js"></script>
 </main>
+<script src="main.js"></script>
 </body>
 </html>
