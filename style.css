@@ -111,84 +111,120 @@ header {
   width: 80%;
   margin: auto
 }
+/* Start categoria de productos */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-title {
+  text-align: center;
+  margin-top: 60px;
+}
+.project-title img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  transition: box-shadow 0.3s ease;
+}
+.project-title img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.project-title p{
+  font-family: 'Alice';
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  margin-top: 15px;
+}
 
 /* Start section footer */
 
 .logo-footer {
     width: 200px;
-    margin-bottom: 100%;
     margin-left: 100px;
-    display: flex;
+    position: relative;
 }
 .content-section{
  background-color: black;
- position: relative;
- margin: 0;
- 
 }
-
-.contact-details {
+.contact-link {
   font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
 }
 .btn, .contact-details {
   color: white;
 }
-#contact {
-    
+#contactnav {
     text-align: center;
-    position: relative;
 }
 h2 {
+  font-family: 'Alice';
+  font-weight: 700;
   text-align: center;
   color: white;
-  
 }
-.footer-info{
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.footer-info, li{
   color: white;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'Alice';
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+}
+.contact-info > h2 {
+  font-size: 20px;
+  font-family: 'Alice';
+  font-weight: 700;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 footer {
-  position: absolute;
   display: flex;
-  justify-content: space-between;
   height: 100px;
   width: 100%;
   align-items: center;
-  background: #efb810;
+}
+#end{
+  background-color: #efb810;
 }
 p {
+  font-family: 'Alice';
+  font-weight: 700;
   color: white;
   font-size: 20px;
   margin-inline-end: auto;
   margin-inline-start: auto;
+
 }
 
 /* End section footer */
 
+
 h1 {
-  margin-top: 400px;
-}
-h1 {
-  margin-top: 400px;
-  font-family: "Homer Simpson UI";
-  margin-top: 30%;
+  font-family: 'Alice';
+  font-weight: 700;
+  margin-top: 40%; /* no funciona para bajar mas */
   text-align: center;
   font-size: 60px;
-  color: #585858;
+  color: rgb(102, 102, 102);
+  text-decoration: underline;
 }
 
 footer, section {
   background-color: white;
-}
-
-.projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-}
-
-.project-image {
-  display: block;
-  width: 100%;
 }
 
 .navlinks li a:hover {
@@ -241,12 +277,13 @@ footer, section {
 
 .carousel-element img {
   display: block;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .carousel-element-info {
   text-align: center;
+  font-family: 'Times New Roman', serif;
 }
 
 /* Start of media queries */
@@ -302,4 +339,33 @@ footer, section {
   .carr-pos-3 {
     transform: translateX(calc(-100% * 2 / 3));
   }
+   /* Categoria de productos*/
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .project-title img {
+    width: 50%;
+    height: auto;
+  }
+  /*footer*/
+  .logo-footer {
+    width: 200px;
+    margin-left: 100px;
+    position: relative;
+  }
+  .content-section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  .contact-link {
+  font-size: 3rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 100px;
+  }
+
 }
