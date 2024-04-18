@@ -46,6 +46,17 @@ nav {
   z-index: 99;
 }
 
+.nav-logo {
+  display: block;
+  width: 135px;
+  margin: 20px 0 20px 0;
+}
+
+.nav-logo img {
+  display: block;
+  width: 100%;
+}
+
 .backdrop-transitioning {
   backdrop-filter: none;
 }
@@ -53,7 +64,7 @@ nav {
 .navlinks-container {
   position: absolute;
   background-color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 90%;
   height: 90%;
 }
@@ -63,7 +74,7 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
+  height: 75%;
 }
 
 .nav-transitioning {
@@ -107,9 +118,14 @@ header {
 }
 
 .logo {
-  display: block;
-  width: 80%;
+  width: 50%;
+  max-width: 250px;
   margin: auto
+}
+
+.logo img {
+  display: block;
+  width: 100%;
 }
 /* Start categoria de productos */
 .content-grid {
@@ -176,7 +192,7 @@ h2 {
   align-items: center;
   height: 40vh;
 }
-.footer-info, li{
+.footer-info li{
   color: white;
   font-size: 20px;
   font-family: 'Alice';
@@ -248,6 +264,7 @@ footer, section {
   font-size: 25px;
   color: white;
   height: 100%;
+  z-index: 2;
 }
 
 .arrow-left {
@@ -289,16 +306,21 @@ footer, section {
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   nav, .backdrop-transitioning {
-    backdrop-filter: none;
+    justify-content: flex-end;
     background-color: white;
-    height: 100px;
+    backdrop-filter: none;
+    height: 150px;
   }
 
+  header {
+    display: none;
+  }
+  
   .navlinks{
     justify-content: space-evenly;
     flex-direction: row;
-    margin-left: 55%;
     letter-spacing: 2px;
+    font-size: 1.5rem;
   }
   .nav, li {
     margin-right: 30px;
@@ -310,22 +332,33 @@ footer, section {
     position: static;
     display: flex;
   }
-
+  
   .menu-toggle, .menu-close {
     display: none;
   }
   .navlinks-container {
+    justify-content: flex-end;
     background-color: transparent;
   }
+
   .logo {
-    width: 250px;
-    margin-bottom: 100%;
+    height: 150px;
+    aspect-ratio: 1;
     margin-left: 30px;
     display: flex;
   }
 
+  .nav-logo {
+    margin-top: 0;
+    margin-right: auto;
+  }
+
   .carousel {
     overflow-x: hidden;
+  }
+
+  .carousel-frame {
+    transition: 0.3s;
   }
 
   .carr-pos-1 {

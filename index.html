@@ -14,6 +14,9 @@
   </button>
   <nav id="navbar" class="hidden">
     <div id="navlinks" class="navlinks-container hidden">
+        <a class="nav-logo" href="./index.html">
+          <img src="Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+        </a>
       <button
         type="button"
         title="Show Menu"
@@ -30,23 +33,20 @@
     </div>
   </nav>
   <header id="header">
-    <div>
-      <a href="./index.html">
-        <img class="logo" src="Imagenes/caballo-bronce.png" alt="logo del caballo">
-      </a>
-    </div>
-</header>
-
+    <a href="./index.html" class="logo">
+      <img src="Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+    </a>
+  </header>
   <main>
     <section class="categories">
-      <button type="button" title="Go left" class="arrow-left">
+      <button type="button" title="Go left" onclick="moveCarouselLeft()" class="arrow-left">
         <i class="fa-solid fa-chevron-left"></i>
       </button>
-      <button type="button" title="Go right" class="arrow-right" onclick="moveCarouselRight()">
+      <button type="button" title="Go right" onclick="moveCarouselRight()" class="arrow-right">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
       <div class="carousel">
-        <div id="carousel" class="carousel-frame carr-pos-3">
+        <div id="carousel" class="carousel-frame carr-pos-1">
           <div class="carousel-element">
             <img src="Imagenes/carrusel/carrusel1.jpg" alt="#">
             <div class="carousel-element-info">
