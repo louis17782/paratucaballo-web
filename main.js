@@ -25,16 +25,23 @@ function hideMenu() {
 };
 
 function moveCarouselRight() {
-  console.log('Working');
-
   if (window.innerWidth >= 1024) {
     const carousel = document.getElementById('carousel');
+    const currentPosition = carousel.classList.item(1);
 
-    console.log(carousel.classList.item(2));
+    if (currentPosition === 'carr-pos-1') carousel.classList.replace('carr-pos-1', 'carr-pos-2');
+    if (currentPosition === 'carr-pos-2') carousel.classList.replace('carr-pos-2', 'carr-pos-3');
+    if (currentPosition === 'carr-pos-3') carousel.classList.replace('carr-pos-3', 'carr-pos-1');
   }
 }
 
 function moveCarouselLeft() {
+  if (window.innerWidth >= 1024) {
+    const carousel = document.getElementById('carousel');
+    const currentPosition = carousel.classList.item(1);
 
+    if (currentPosition === 'carr-pos-1') carousel.classList.replace('carr-pos-1', 'carr-pos-3');
+    if (currentPosition === 'carr-pos-2') carousel.classList.replace('carr-pos-2', 'carr-pos-1');
+    if (currentPosition === 'carr-pos-3') carousel.classList.replace('carr-pos-3', 'carr-pos-2');
+  }
 }
-
