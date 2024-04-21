@@ -17,8 +17,16 @@ body {
   background-color: transparent;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  color: #e6d3d3;
+  color: white;
   margin: 0
+}
+.projects-section {
+  background-image: url('/Imagenes/fondo3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+ 
 }
 
 .parallax {
@@ -140,7 +148,7 @@ header {
 .project-title img {
   width: 80%;
   height: auto;
-  border-radius: 20px;
+  border-radius: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
   transition: box-shadow 0.3s ease;
 }
@@ -193,7 +201,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
 }
 .footer-info, li {
   color: white;
@@ -252,7 +259,7 @@ footer, section {
 
 .categories {
   position: relative;
-  background-color: transparent;
+  background-color: #7f400040;
 }
 
 .carousel {
@@ -297,7 +304,7 @@ footer, section {
 
 .carousel-element img {
   display: block;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -358,10 +365,16 @@ footer, section {
 
   .carousel {
     overflow-x: hidden;
+    
   }
 
   .carousel-frame {
     transition: 0.3s;
+  }
+  .carousel-element img {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
   }
 
   .carr-pos-1 {
