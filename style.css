@@ -313,6 +313,48 @@ footer, section {
   font-family: 'Times New Roman', serif;
 }
 
+/* Estilos de la ventana modal */
+
+.modal-backdrop, .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-backdrop {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.5s;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-transitioning {
+  opacity: 0;
+}
+
+.modal {
+  flex-direction: column;
+  background-color: #222;
+  width: 90%;
+  max-width: 750px;
+  height: 90%;
+}
+
+.modal img {
+  display: block;
+  width: 60%;
+}
+
+/* Fin de los estilos de la ventana modal */
+
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   h1 {

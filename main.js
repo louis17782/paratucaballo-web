@@ -45,3 +45,27 @@ function moveCarouselLeft() {
     if (currentPosition === 'carr-pos-3') carousel.classList.replace('carr-pos-3', 'carr-pos-2');
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+
+  modal.addEventListener('click', (event) => event.stopPropagation());
+})
+
+function showModal(product) {
+  console.log(product);
+
+  const modal = document.getElementById('backdrop');
+
+  modal.classList.replace('modal-hidden', 'modal-transitioning');
+
+  setTimeout(() => modal.classList.remove('modal-transitioning'), 500);
+}
+
+function hideModal() {
+  const modal = document.getElementById('backdrop');
+
+  modal.classList.add('modal-transitioning');
+
+  setTimeout(() => modal.classList.replace('modal-transitioning', 'modal-hidden'), 500);
+}
