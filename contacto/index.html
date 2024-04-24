@@ -13,7 +13,7 @@
   </button>
   <nav id="navbar" class="hidden">
     <div id="navlinks" class="navlinks-container hidden">
-        <a class="nav-logo" href="./index.html">
+        <a class="nav-logo" href="../index.html">
           <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
         </a>
       <button
@@ -24,42 +24,76 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
       <ul class="navlinks">
-        <li><a class="nav-link" href="./index.html" rel="noreferrer">Inicio</a></li>
-        <li><a class="nav-link" href="#productos" rel="noreferrer">Productos</a></li>
-        <li><a class="nav-link" href="./Quienes somos/index.html" rel="noreferrer">Quienes somos</a></li>
-        <li><a class="nav-link" href="#contactanos" rel="noreferrer">Contactanos</a></li>
+        <li><a class="nav-link" href="../index.html" rel="noreferrer">Inicio</a></li>
+        <li><a class="nav-link" href="../productos/index.html" rel="noreferrer">Productos</a></li>
+        <li><a class="nav-link" href="../nosotros/index.html" rel="noreferrer">Nosotros</a></li>
+        <li><a class="nav-link" href="#" rel="noreferrer">Contacto</a></li>
       </ul>
     </div>
   </nav>
   <header id="header">
-    <a href="./index.html" class="logo">
+    <a href="../index.html" class="logo">
       <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
     </a>
   </header>
   <main>
-<section class="projects-section">
-<h5>AQUI SE AGREGARAN NUMEROS DE TELEFONOS CORREO DE EMPRESA DIRECCION FISICA Y UN MAP HORARIOS FISICOS</h5>
-<p></p>
+    <section class="projects-section">
+      <h1>Escribenos</h1>
+      </div>
+    <div class="formulario">
+      <form action="/submit-contacto" method="post">
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Escribe tu email">
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono">
+        </div>
+        <div class="campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+        <button type="submit">Enviar</button>
+      </form>
+      </div>
+    <p class="location">Nuestra Ubicación<p>
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.79517229707!2d-69.2898134!3d10.0622641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767234d47202b%3A0x749bb7b38d2fd562!2sPara%20tu%20Caballo!5e0!3m2!1ses-419!2sus!4v1713903413649!5m2!1ses-419!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
 <section class="content-section">
   <div>
-    <a href="./index.html">
+    <a href="../index.html">
     <img class="logo-footer"src="/imagenes/footer/IMG-6148.png" alt="#">
   </a>
   </div>
   <div class="contact-info">
-  <h2>Productos de alta calidad que llevamos a eventos a toda Venezuela</h2>
+  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
   </div>
   <div class="info">
     <ul>
-   <li><a class="footer-info" href="#productos">Productos</a></li>
-   <li><a class="footer-info" href="./Quienes somos/index.html">Quienes somos</a></li>
-   <li><a class="footer-info" href="#contactanos">Contactanos</a></li>
+   <li><a class="footer-info" href="../productos/index.html">Productos</a></li>
+   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
+   <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
     </ul>
   </div>
-  
+  <div class="pagos">
+    <h3>Metodos de pagos</h3>
+    <p>Contra entrega</p>
+    <p>Pago movil</p>
+    <p>Zelle</p>
+    <i class="fa-brands fa-cc-visa"></i>
+    <i class="fa-brands fa-cc-mastercard"></i>
+    <i class="fa-regular fa-handshake"></i>
+  </div>
 </section>
 <footer id="end">
-<p class="horse">© Para tu caballo 2024</p>
+<p class="horse">© Para Tu Caballo 2024</p>
 <div class="contact-link">
 
   <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
@@ -68,6 +102,6 @@
 </div>
 </footer>
 </main>
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </body>
 </html>
