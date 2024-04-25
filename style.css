@@ -12,11 +12,11 @@ button {
   background-color: transparent;
   border: none;
 }
-h3 {
-  color: #222;
-  font-size: 40px;
-  padding: 20%;
-  text-align: center;
+h4 {
+    color: #222;
+    font-size: 40px;
+    padding: 10%;
+    text-align: center;
 }
 body {
   background-color: transparent;
@@ -43,8 +43,6 @@ body {
   border: 4px solid #efb810;
   background-color: #fff; 
 }
-
-
 .campo {
   margin-bottom: 30px;
 }
@@ -345,7 +343,7 @@ footer, section {
 }
 
 .navlinks li a:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra cuando pasas el cursor sobre el enlace */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 .categories {
@@ -607,6 +605,32 @@ footer, section {
     margin-left: 70px;
   }
   /*CONTACTO*/
-
+  .contenedor1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenedor1 {
+    background-image: url('/Imagenes/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+  }
   
+  .form1 {
+    flex: 1;
+  }
+  
+  .mapa, .formulario {
+    margin-top: 0px; 
+    margin-bottom: 30px;
+  }
+  .formulario {
+    width: 500px;
+  }
+  .mapa {
+   margin-top: 70px;
+   height: 100px;
+
+  }  
 }
