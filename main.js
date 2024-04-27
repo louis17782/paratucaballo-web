@@ -59,7 +59,7 @@ function showModal(product) {
 
   modal.classList.replace('modal-hidden', 'modal-transitioning');
 
-  setTimeout(() => modal.classList.remove('modal-transitioning'), 500);
+  setTimeout(() => modal.classList.remove('modal-transitioning'));
 }
 
 function hideModal() {
@@ -68,4 +68,41 @@ function hideModal() {
   modal.classList.add('modal-transitioning');
 
   setTimeout(() => modal.classList.replace('modal-transitioning', 'modal-hidden'), 500);
+}
+
+function generateCardHTML(product) {
+  const anchor = document.createElement('a');
+  anchor.classList.add('project-title');
+
+  const card = document.createElement('div');
+  card.classList.add('tarjeta');
+
+  const image = document.createElement('img');
+  image.src = product.imageURL;
+  image.alt = 'Product Image';
+  image.classList.add('project-image');
+
+  const content = document.createElement('div');
+  content.classList.add('contenido');
+  
+  const paragraph = document.createElement('p');
+  paragraph.classList.add('project-title');
+
+  const text = document.createTextNode(product.name);
+
+  paragraph.appendChild(text);
+  content.appendChild(paragraph);
+  card.appendChild(image);
+  card.appendChild(content);
+  anchor.appendChild(card);
+
+  return anchor;
+}
+
+function renderCards(products, category) {
+  const container = document.getElementById('products-container');
+
+  const filteredProducts = products.filter((product) => product.category === category);
+
+  filteredProducts.forEach((product) => container.appendChild(generateCardHTML(product)));
 }
