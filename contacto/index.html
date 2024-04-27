@@ -15,6 +15,7 @@
     <div id="navlinks" class="navlinks-container hidden">
         <a class="nav-logo" href="../index.html">
           <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+          
         </a>
       <button
         type="button"
@@ -37,71 +38,74 @@
     </a>
   </header>
   <main>
-    <section class="projects-section">
-      <h1>Escribenos</h1>
-      </div>
-    <div class="formulario">
-      <form action="/submit-contacto" method="post">
-        <div class="campo">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+    <div class="contenedor1">
+      <div class="form1">
+       <h4>Contactanos</h4>
+        <div class="formulario">
+          <form action="/submit-contacto" method="post">
+              <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+              </div>
+              <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+              </div>
+                <div class="campo">
+                  <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
-        <div class="campo">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Escribe tu email">
+        <div class="form1">
+              <h4>Nuestra ubicaci&oacute;n</h4>
+          <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.79517229707!2d-69.2898134!3d10.0622641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767234d47202b%3A0x749bb7b38d2fd562!2sPara%20tu%20Caballo!5e0!3m2!1ses-419!2sus!4v1713903413649!5m2!1ses-419!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="campo">
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono">
-        </div>
-        <div class="campo">
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
-      </div>
-        <button type="submit">Enviar</button>
-      </form>
-      </div>
-    <p class="location">Nuestra Ubicación<p>
-    <div class="mapa">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.79517229707!2d-69.2898134!3d10.0622641!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767234d47202b%3A0x749bb7b38d2fd562!2sPara%20tu%20Caballo!5e0!3m2!1ses-419!2sus!4v1713903413649!5m2!1ses-419!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
     </div>
+          <section class="content-section">
+        <div>
+          <a href="../index.html">
+          <img class="logo-footer"src="/imagenes/footer/IMG-6148.png" alt="#">
+        </a>
+        </div>
+        <div class="contact-info">
+        <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
+        </div>
+        <div class="info">
+          <ul>
+        <li><a class="footer-info" href="../productos/index.html">Productos</a></li>
+        <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
+        <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="pagos">
+          <h3>Metodos de pagos</h3>
+          <p>Contra entrega</p>
+          <p>Pago movil</p>
+          <p>Zelle</p>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-regular fa-handshake"></i>
+        </div>
+          </section>
+        <footer id="end">
+          <p class="horse">© Para Tu Caballo 2024</p>
+          <div class="contact-link">
 
-<section class="content-section">
-  <div>
-    <a href="../index.html">
-    <img class="logo-footer"src="/imagenes/footer/IMG-6148.png" alt="#">
-  </a>
-  </div>
-  <div class="contact-info">
-  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
-  </div>
-  <div class="info">
-    <ul>
-   <li><a class="footer-info" href="../productos/index.html">Productos</a></li>
-   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
-   <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
-    </ul>
-  </div>
-  <div class="pagos">
-    <h3>Metodos de pagos</h3>
-    <p>Contra entrega</p>
-    <p>Pago movil</p>
-    <p>Zelle</p>
-    <i class="fa-brands fa-cc-visa"></i>
-    <i class="fa-brands fa-cc-mastercard"></i>
-    <i class="fa-regular fa-handshake"></i>
-  </div>
-</section>
-<footer id="end">
-<p class="horse">© Para Tu Caballo 2024</p>
-<div class="contact-link">
-
-  <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-</div>
-</footer>
-</main>
-<script src="../main.js"></script>
-</body>
-</html>
+              <a href="https://www.instagram.com/paratucaballo"  class="btn contact-details">
+          <i class="fa-brands fa-instagram"></i>
+              </a>
+                </div>
+              </footer>
+    </main>
+        <script src="../main.js"></script>
+        </body>
+    </html>
