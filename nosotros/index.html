@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosotros</title>
+  <title>Para tu caballo</title>
   <link rel="stylesheet" href="../style.css">
+  <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Nosotros</h1>
-  <p>Por ahora solamente voy a tener esto, pero despupués lo arreglo.</p>
-  <script src="../main.js"></script>
+  <button type="button" class="menu-toggle" onclick="showMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <nav id="navbar" class="hidden">
+    <div id="navlinks" class="navlinks-container hidden">
+        <a class="nav-logo" href="../index.html">
+          <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+        </a>
+      <button
+        type="button"
+        title="Show Menu"
+        onclick="hideMenu()"
+        class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="navlinks">
+        <li><a class="nav-link" href="../index.html" rel="noreferrer">Inicio</a></li>
+        <li><a class="nav-link" href="../productos/index.html" rel="noreferrer">Productos</a></li>
+        <li><a class="nav-link" href="#" rel="noreferrer">Nosotros</a></li>
+        <li><a class="nav-link" href="../contacto/index.html" rel="noreferrer">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <a href="../index.html" class="logo">
+      <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+    </a>
+  </header>
+  <main>
+<section class="projects-section">
+<h3>Sobre nosotros</h3>
+<p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius error quaerat, cumque aperiam magnam assumenda neque ratione quod dignissimos!</p>
+<section class="content-section">
+  <div>
+    <a href="../index.html">
+    <img class="logo-footer"src="/imagenes/footer/IMG-6148.png" alt="#">
+  </a>
+  </div>
+  <div class="contact-info">
+  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
+  </div>
+  <div class="info">
+    <ul>
+   <li><a class="footer-info" href="#">Productos</a></li>
+   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
+   <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="pagos">
+    <h3>Metodos de pagos</h3>
+    <p>Contra entrega</p>
+    <p>Pago movil</p>
+    <p>Zelle</p>
+    <i class="fa-brands fa-cc-visa"></i>
+    <i class="fa-brands fa-cc-mastercard"></i>
+    <i class="fa-regular fa-handshake"></i>
+  </div>
+</section>
+<footer id="end">
+<p class="horse">© Para Tu Caballo 2024</p>
+<div class="contact-link">
+
+  <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+</footer>
+</main>
+<script src="../main.js"></script>
 </body>
 </html>

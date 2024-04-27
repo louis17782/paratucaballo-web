@@ -45,3 +45,64 @@ function moveCarouselLeft() {
     if (currentPosition === 'carr-pos-3') carousel.classList.replace('carr-pos-3', 'carr-pos-2');
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+
+  modal.addEventListener('click', (event) => event.stopPropagation());
+})
+
+function showModal(product) {
+  console.log(product);
+
+  const modal = document.getElementById('backdrop');
+
+  modal.classList.replace('modal-hidden', 'modal-transitioning');
+
+  setTimeout(() => modal.classList.remove('modal-transitioning'));
+}
+
+function hideModal() {
+  const modal = document.getElementById('backdrop');
+
+  modal.classList.add('modal-transitioning');
+
+  setTimeout(() => modal.classList.replace('modal-transitioning', 'modal-hidden'), 500);
+}
+
+function generateCardHTML(product) {
+  const anchor = document.createElement('a');
+  anchor.classList.add('project-title');
+
+  const card = document.createElement('div');
+  card.classList.add('tarjeta');
+
+  const image = document.createElement('img');
+  image.src = product.imageURL;
+  image.alt = 'Product Image';
+  image.classList.add('project-image');
+
+  const content = document.createElement('div');
+  content.classList.add('contenido');
+  
+  const paragraph = document.createElement('p');
+  paragraph.classList.add('project-title');
+
+  const text = document.createTextNode(product.name);
+
+  paragraph.appendChild(text);
+  content.appendChild(paragraph);
+  card.appendChild(image);
+  card.appendChild(content);
+  anchor.appendChild(card);
+
+  return anchor;
+}
+
+function renderCards(products, category) {
+  const container = document.getElementById('products-container');
+
+  const filteredProducts = products.filter((product) => product.category === category);
+
+  filteredProducts.forEach((product) => container.appendChild(generateCardHTML(product)));
+}
