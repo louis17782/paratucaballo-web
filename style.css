@@ -340,11 +340,11 @@ footer {
 
 
 h1 {
-  font-family: didot;
+  font-family: Georgia, Times, "Times New Roman", serif;
   text-align: center;
   font-size: 50px;
   color: #10102E;
-  border-bottom: 5px solid #E7DD11;
+  border-bottom: 5px solid black;
   width: 300px; 
   margin: auto;
   padding-bottom: 40px; 
