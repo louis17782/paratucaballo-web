@@ -40,20 +40,25 @@
 <section class="projects-section">
 <h1>Hidrataci&oacute;n Endovenosa</h1>
 <div class="content-grid">
-  <a href=""  class="project-title">
+<a class="project-title">
   <div class="tarjeta">  
     <img class="project-image" src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0" alt="">
   <div class="contenido">  
     <p class="project-title">aqui va el titulo con descripcio</p>
+    <button type="button" onclick="showModal(products[0])">Ordenar</button>
   </div>
   </div>
   </a>
 
-  <a href=""  class="project-title">
+  <a class="project-title">
  <div class="tarjeta">   
     <img class="project-image" src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0"" alt="">
  <div class="contenido">   
     <p class="project-title">aqui va el titulo con descripcio</p>
+    <div class="clic">
+    <button type="button" onclick="showModal(products[0])">Ordenar</button>
+    <div>
+
   </div>
   </div>
   </a>  
@@ -102,7 +107,7 @@
 
   - Rubén del pasado.
 -->
-  <button type="button" onclick="showModal(products[0])">Show Modal</button>
+  
   <div id="backdrop" class="modal-backdrop modal-hidden" onclick="hideModal()">
     <div id="modal" class="modal">
       <img
