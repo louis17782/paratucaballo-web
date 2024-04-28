@@ -21,7 +21,6 @@ h4 {
 }
 body {
   background-color: transparent;
-  font-family: didot;
   font-size: 16px;
   color: white;
   margin: 0
@@ -32,7 +31,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center; 
- 
 }
 
 /*CONTACTO*/
@@ -215,12 +213,30 @@ header {
   margin: 40px ;
   display: inline-block;
 }
+.logos1 {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  margin: 40px ;
+  display: inline-block;
+}
+.logos1 img {
+  width: 100%;
+  height: auto;
+}
+.tarjeta {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
 .textimg {
   color: #222;
   padding: 10px;
   font-weight: bold;
-  letter-spacing: 2px;
-  
+}
+.subtitles {
+  color: #222;
+  font-size: 12px;
 }
 .tarjeta img {
   width: 100%;
@@ -240,14 +256,14 @@ header {
   margin: 0;
   color: white;
   font-size: 30px;
-  font-family: didot;
+  font-family: Georgia, Times, "Times New Roman", serif;
   text-align: center;
 }
 .video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
   padding: 20px;
 }
 /* Start section lab */
@@ -344,7 +360,7 @@ h1 {
   text-align: center;
   font-size: 50px;
   color: #10102E;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid #E7DD11;
   width: 300px; 
   margin: auto;
   padding-bottom: 40px; 
@@ -490,9 +506,10 @@ footer, section {
     flex-direction: row;
     letter-spacing: 2px;
     font-size: 1.5rem;
+    height: 100%;
   }
   .nav, li {
-    margin-right: 30px;
+    margin-right: 70px;
   }
   .nav-transitioning {
     transform: none;
@@ -568,6 +585,9 @@ footer, section {
     height: auto;
   }
   .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
     text-align: center;
     margin: 0 auto; 
   }
@@ -582,7 +602,31 @@ footer, section {
   }
   .textimg {
     color: #222;
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .content-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  .logos1 {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    margin: 40px ;
+    display: inline-block;
+  }
+  .logos1 img {
+    width: 100%;
+    height: auto;
+  }
+  .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
   }
   /*footer*/
   .logo-footer {
