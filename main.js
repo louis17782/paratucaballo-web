@@ -106,3 +106,46 @@ function renderCards(products, category) {
 
   filteredProducts.forEach((product) => container.appendChild(generateCardHTML(product)));
 }
+ /*Cambiar el botón "Agregar" por botones
+function toggleButtons() {
+  var addButton = document.getElementById('agregar');
+  var counterDisplay = document.getElementById('counter');
+  var counter = 0;
+ 
+  addButton.innerHTML = '+';
+  addButton.setAttribute('onclick', 'sumar()');
+  addButton.setAttribute('id', 'sumar');
+  addButton.style.marginRight = '15px';
+
+  var restarButton = document.createElement('button');
+  restarButton.innerHTML = '-';
+  restarButton.setAttribute('onclick', 'restar()');
+  restarButton.setAttribute('id', 'restar');
+  addButton.parentNode.insertBefore(restarButton, counterDisplay);
+}
+
+function sumar() {
+  var counterDisplay = document.getElementById('counter');
+  var counter = parseInt(counterDisplay.textContent);
+  counter++;
+  counterDisplay.textContent = counter;
+}
+
+function restar() {
+  var counterDisplay = document.getElementById('counter');
+  var counter = parseInt(counterDisplay.textContent);
+  if (counter > 1) {
+    counter--;
+    counterDisplay.textContent = counter;
+  } else if (counter === 1) {
+    counterDisplay.textContent = 'agregar';
+    var restarButton = document.getElementById('restar');
+    if (restarButton) {
+      restarButton.remove();
+    }
+    var addButton = document.getElementById('agregar');
+    addButton.innerHTML = 'agregar';
+    addButton.setAttribute('onclick', 'toggleButtons()');
+    addButton.setAttribute('id', 'agregar');
+  }
+  */
