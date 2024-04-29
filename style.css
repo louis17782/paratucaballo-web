@@ -229,7 +229,7 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   padding: 15px;
 }
-.textimg {
+.textimg, .titulo {
   color: #222;
   padding: 10px;
   font-weight: bold;
@@ -243,15 +243,25 @@ header {
   height: auto;
   
 }
-.contenido {
+.contenido, .order {
   padding: 10px;
   background-color: #efb810;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.contenido:hover {
+.contenido, .order:hover {
   background-color: #5a3900;
 }
+.price {
+  color: #222;
+  margin-top: 20px;
+}
+.order, .price {
+   display: inline-block;
+   align-items: center;
+   padding: 15px;
+}
+
 .project-title, .project-description {
   margin: 0;
   color: white;
