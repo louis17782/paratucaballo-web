@@ -21,7 +21,6 @@ h4 {
 }
 body {
   background-color: transparent;
-  font-family: didot;
   font-size: 16px;
   color: white;
   margin: 0
@@ -32,7 +31,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center; 
- 
 }
 
 /*CONTACTO*/
@@ -215,39 +213,67 @@ header {
   margin: 40px ;
   display: inline-block;
 }
-.textimg {
+.logos1 {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  margin: 40px ;
+  display: inline-block;
+}
+.logos1 img {
+  width: 100%;
+  height: auto;
+}
+.tarjeta {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+.textimg, .titulo {
   color: #222;
   padding: 10px;
   font-weight: bold;
-  letter-spacing: 2px;
-  
+}
+.subtitles {
+  color: #222;
+  font-size: 12px;
 }
 .tarjeta img {
   width: 100%;
   height: auto;
   
 }
-.contenido {
+.contenido, .order {
   padding: 10px;
   background-color: #efb810;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.contenido:hover {
+.contenido, .order:hover {
   background-color: #5a3900;
 }
+.price {
+  color: #222;
+  margin-top: 20px;
+}
+.order, .price {
+   display: inline-block;
+   align-items: center;
+   padding: 15px;
+}
+
 .project-title, .project-description {
   margin: 0;
   color: white;
   font-size: 30px;
-  font-family: didot;
+  font-family: Georgia, Times, "Times New Roman", serif;
   text-align: center;
 }
 .video {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 100%;
   padding: 20px;
 }
 /* Start section lab */
@@ -340,7 +366,7 @@ footer {
 
 
 h1 {
-  font-family: didot;
+  font-family: Georgia, Times, "Times New Roman", serif;
   text-align: center;
   font-size: 50px;
   color: #10102E;
@@ -445,14 +471,14 @@ footer, section {
 .modal {
   flex-direction: column;
   background-color: #222;
-  width: 90%;
+  width: 70%;
   max-width: 750px;
-  height: 90%;
+  height: 50%;
 }
 
 .modal img {
   display: block;
-  width: 60%;
+  width: 80%;
 }
 
 /* Fin de los estilos de la ventana modal */
@@ -490,9 +516,10 @@ footer, section {
     flex-direction: row;
     letter-spacing: 2px;
     font-size: 1.5rem;
+    height: 100%;
   }
   .nav, li {
-    margin-right: 30px;
+    margin-right: 70px;
   }
   .nav-transitioning {
     transform: none;
@@ -568,6 +595,9 @@ footer, section {
     height: auto;
   }
   .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
     text-align: center;
     margin: 0 auto; 
   }
@@ -582,7 +612,31 @@ footer, section {
   }
   .textimg {
     color: #222;
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .content-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  .logos1 {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    margin: 40px ;
+    display: inline-block;
+  }
+  .logos1 img {
+    width: 100%;
+    height: auto;
+  }
+  .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
   }
   /*footer*/
   .logo-footer {
