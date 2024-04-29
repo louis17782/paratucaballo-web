@@ -471,14 +471,14 @@ footer, section {
 .modal {
   flex-direction: column;
   background-color: #222;
-  width: 90%;
+  width: 70%;
   max-width: 750px;
-  height: 90%;
+  height: 50%;
 }
 
 .modal img {
   display: block;
-  width: 60%;
+  width: 80%;
 }
 
 /* Fin de los estilos de la ventana modal */
