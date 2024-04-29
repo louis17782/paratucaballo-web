@@ -631,6 +631,7 @@ footer, section {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: center;
     text-align: center;
     margin: 0 auto; 
   }
@@ -651,6 +652,7 @@ footer, section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin: 0 auto; 
   }
   .logos1 {
