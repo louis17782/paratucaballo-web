@@ -256,7 +256,7 @@ header {
   color: #222;
   margin-top: 20px;
 }
-.order, .price {
+.order, .price{
    display: inline-block;
    align-items: center;
    padding: 15px;
@@ -276,8 +276,41 @@ header {
   width: 100%;
   padding: 20px;
 }
-/* Start section lab */
 
+/* Estilos ventana modal */
+.titulo-modal {
+  color: #222;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.subtitles-modal {
+  color: #222;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.price-modal {
+  color: #222;
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 30px;
+}
+.modal-order, .price-modal {
+  align-items: center;
+  display: inline-block;
+}
+.modal-order {
+  background-color: #efb810;
+  padding-left: 30px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 50px;
+  font-size: 20px;
+}
 
 /* Start section footer */
 
@@ -470,15 +503,15 @@ footer, section {
 
 .modal {
   flex-direction: column;
-  background-color: #222;
-  width: 70%;
+  background-color: #E1E8BB;
+  width: 80%;
   max-width: 750px;
-  height: 50%;
+  height: 70%;
 }
 
 .modal img {
   display: block;
-  width: 80%;
+  width: 90%;
 }
 
 /* Fin de los estilos de la ventana modal */
@@ -699,4 +732,42 @@ footer, section {
    height: 100px;
 
   }  
+  .titulo-modal {
+    color: #222;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .subtitles-modal {
+    color: #222;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .price-modal {
+    color: #222;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .modal-order {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    margin-left: 120px;
+    font-size: 20px;
+  }
+  .modal {
+    flex-direction: column;
+    background-color: white;
+    max-width: 450px;
+    height: 95%;
+  }
+  
+  .modal img {
+    width: 75%;
+    margin-top: 20px;
+  }
 }
