@@ -255,6 +255,12 @@ header {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.diseños {
+  color: #222;
+  font-size: 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
 
 .contenido {
   background-color: #efb810 ;  
@@ -299,6 +305,7 @@ header {
 }
 .content-section{
  background-color: #222;
+
  
 }
 .contact-link {
@@ -452,47 +459,34 @@ footer, section {
   font-family: didot;
 }
 
-/* Estilos de la ventana modal */
-
-.modal-backdrop, .modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-backdrop {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+.whatsapp-btn {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  transition: opacity 0.5s;
+  bottom: 20px;
+  right: 20px;
 }
 
-.modal-hidden {
-  display: none;
+.whatsapp-btn {
+  width: 50px;
+  height: 130px;
+  border-radius: 50%;
+  font-size: 60px;
+}
+/* incio de galerias en lo sets */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
-.modal-transitioning {
-  opacity: 0;
+.gallery-item {
+  overflow: hidden;
 }
 
-.modal {
-  flex-direction: column;
-  background-color: #E1E8BB;
-  width: 80%;
-  max-width: 750px;
-  height: 70%;
-}
-
-.modal img {
+.gallery-item img {
+  width: 100%;
+  height: auto;
   display: block;
-  width: 90%;
 }
-
-/* Fin de los estilos de la ventana modal */
 
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
@@ -664,7 +658,6 @@ footer, section {
     position: relative;
   }
   .content-section{
-    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
@@ -718,55 +711,16 @@ footer, section {
    height: 100px;
 
   }  
-  .titulo-modal {
-    color: #222;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 130%;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .subtitles-modal {
-    color: #222;
-    font-size: 15px;
-    text-align: center;
-    padding: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .price-modal {
-    color: #222;
-    font-size: 30px;
-    margin-left: 50px;
-  }
-  .modal-order {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    margin-left: 120px;
-    font-size: 20px;
-  }
-  .modal {
-    flex-direction: column;
-    background-color: white;
-    max-width: 450px;
-    height: 95%;
-  }
-  
-  .modal img {
-    width: 75%;
-    margin-top: 20px;
-  }
   .whatsapp-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
   }
   
-  .whatsapp-btn img {
-    width: 50px;
-    height: 50px;
+  .whatsapp-btn {
+    width: 60px;
+    height: 150px;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 99;
+    font-size: 70px;
   }
 }
