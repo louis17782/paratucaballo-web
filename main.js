@@ -70,6 +70,27 @@ function hideModal() {
   setTimeout(() => modal.classList.replace('modal-transitioning', 'modal-hidden'), 500);
 }
 
+/*
+  <a class="project-title">
+    <div class="tarjeta">  
+      <img class="project-image" src="/Imagenes/hidratacion-endovenosa/a5.jpg" alt="#">
+    <div class="content-order">
+      <p class="titulo">titulo de la imagen</p>  
+      <p class="subtitles"> descripcion Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, dicta!</p>
+      <p class="price">$20.00</p>
+      <button class="order" type="button" onclick="showModal(products[0])">Ordenar aqui</button>
+    </div>
+    </div>
+  </a>
+*/
+
+function checkCart(product) {
+  console.log('Working!');
+  const cart = localStorage.getItem('carrito') ? JSON.parse(localStorage.getItem('carrito')) : [];
+
+  return cart.some((cartProduct) => cartProduct.id === product.id)
+};
+
 function generateCardHTML(product) {
   const anchor = document.createElement('a');
   anchor.classList.add('project-title');
@@ -83,15 +104,47 @@ function generateCardHTML(product) {
   image.classList.add('project-image');
 
   const content = document.createElement('div');
-  content.classList.add('contenido');
+  content.classList.add('content-order');
   
-  const paragraph = document.createElement('p');
-  paragraph.classList.add('project-title');
+  const title = document.createElement('p');
+  title.classList.add('titulo');
 
-  const text = document.createTextNode(product.name);
+  const titleText = document.createTextNode(product.name);
 
-  paragraph.appendChild(text);
-  content.appendChild(paragraph);
+  const subtitle = document.createElement('p');
+  subtitle.classList.add('subtitles');
+
+  const subtitleText = document.createTextNode(product.desc);
+
+  const price = document.createElement('p');
+  price.classList.add('price');
+
+  const priceText = document.createTextNode(`$${product.precioRef}`);
+
+  const buyButton = document.createElement('button');
+  buyButton.type = 'button';
+  buyButton.classList.add('order');
+
+  const buyButtonText = document.createTextNode('Agregar al Carrito');
+  const addedToCart = document.createTextNode('Agregado 👍');
+
+  buyButton.addEventListener('click', (event) => {
+    const carrito = localStorage.getItem('carrito') ? JSON.parse(localStorage.getItem('carrito')) : [];
+    if (!checkCart(product)) {
+      carrito.push({ ...product, quantity: 1 });
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+      event.target.innerText = 'Agregado 👍';
+    };
+  });
+
+  title.appendChild(titleText);
+  subtitle.appendChild(subtitleText);
+  price.appendChild(priceText);
+  checkCart(product) ? buyButton.appendChild(addedToCart) : buyButton.appendChild(buyButtonText);
+  content.appendChild(title);
+  content.appendChild(subtitle);
+  content.appendChild(price);
+  content.appendChild(buyButton);
   card.appendChild(image);
   card.appendChild(content);
   anchor.appendChild(card);
