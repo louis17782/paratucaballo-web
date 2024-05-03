@@ -474,8 +474,13 @@ footer, section {
 /* incio de galerias en lo sets */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  row-gap: 100px;
+  column-gap: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 100px;
 }
 
 .gallery-item {
@@ -483,9 +488,14 @@ footer, section {
 }
 
 .gallery-item img {
+  display: flex;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-color: grey ;
+  padding: 10px;
+  
 }
 
 /* Start of media queries */
