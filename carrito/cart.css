@@ -1,4 +1,150 @@
+h2 {
+  color: black;
+  margin: 25px 0;
+}
+
+.page-container,
+.cart-item,
+.cart-item-button,
+.cart-item-amounts,
+.amounts,
+.order-form,
+.order-form label {
+  display: flex;
+}
+
+.cart-item, .amounts {
+  justify-content: space-between;
+}
+
+.cart-item, .cart-item-button {
+  align-items: center;
+}
+
+.page-container,
+.cart-item-amounts,
+.order-form,
+.order-form label {
+  flex-direction: column;
+}
+
+.page-container {
+  gap: 30px;
+  padding: 30px 0;
+  margin: 0 5%;
+}
+
 .cart-item {
-  background-color: red;
-  color: white;
-};
+  background-color: #ececec;
+  color: black;
+  padding: 20px;
+  margin: 0;
+}
+
+.cart-item:nth-child(even) {
+  background-color: white;
+}
+
+.cart-item-info {
+  margin-right: 20px;
+}
+
+.product-title, .product-code {
+  text-align: start;
+}
+
+.product-title {
+  font-size: 1.25rem;
+}
+
+.product-code {
+  color: gray;
+}
+
+.cart-item-amounts {
+  width: 30%;
+  gap: 10px;
+}
+
+.item-price {
+  font-size: 1.25rem;
+}
+
+.cart-item-button {
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.cart-item-button:hover {
+  background-color: gray;
+  color: white
+}
+
+.remove-item {
+  font-size: 1.25rem;
+  color: #400;
+}
+
+.order-container {
+  background-color: #ececec;
+  color: black;
+  padding: 20px 5%;
+}
+
+.total {
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.total-notice {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.order-form label,
+.order-form button {
+  margin: 15px 0;
+}
+
+.order-form input,
+.order-form button {
+  height: 40px;
+  padding: 12px 20px;
+}
+
+.order-form input {
+  margin-top: 5px;
+  border: none;
+}
+
+.order-form button {
+  font-weight: 700;
+  color: black
+}
+
+@media only screen and (width > 1024px) {
+  .page-container {
+    flex-direction: row;
+  }
+
+  .cart-page {
+    width: 60%;
+  }
+
+  .product-title {
+    font-size: 1.5rem;
+  }
+  
+  .product-code, .amounts span {
+    font-size: 1.25rem;
+  }
+
+  .order-page {
+    width: 40%;
+  }
+}
