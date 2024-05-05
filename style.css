@@ -463,6 +463,24 @@ footer, section {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  animation: vibrate 2s infinite linear;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .whatsapp-btn {
@@ -472,30 +490,39 @@ footer, section {
   font-size: 60px;
 }
 /* incio de galerias en lo sets */
+
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  row-gap: 100px;
-  column-gap: 70px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 100px;
-}
-
-.gallery-item {
-  overflow: hidden;
-}
-
-.gallery-item img {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/Imagenes/fondo\ petos.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.main-image {
+  margin-bottom: 20px;
+}
+
+.main-image img {
   max-width: 100%;
-  height: auto;
+  max-height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  padding: 5px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  align-content: space-between;
-  background-color: grey ;
-  padding: 10px;
-  
+}
+
+.thumbnails img {
+  width: 100px; 
+  margin: 5px;
+  cursor: pointer;
 }
 
 /* Start of media queries */
