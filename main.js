@@ -46,12 +46,6 @@ function moveCarouselLeft() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('modal');
-
-  modal.addEventListener('click', (event) => event.stopPropagation());
-})
-
 function showModal(product) {
   console.log(product);
 
