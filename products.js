@@ -1,6 +1,6 @@
 const products = [
   {
-    id: 1,
+    id: 'MO001',
     name: 'Desodorante 100ml',
     desc: 'Este es un desodorante para caballos o gente muy hedionda.',
     precioRef: 50,
@@ -8,7 +8,7 @@ const products = [
     category: 'antibiotics',
   },
   {
-    id: 2,
+    id: 'MO002',
     name: 'Desodorante 200ml',
     desc: 'Este es un desodorante para caballos o gente muy hedionda.',
     precioRef: 75,
@@ -16,14 +16,14 @@ const products = [
     category: 'antibiotics',
   },
   {
-    id: 3,
+    id: 'PR001',
     name: 'Alimento Nutritivo',
     desc: 'Este es un desodorante para caballos o gente muy hedionda.',
     precioRef: 150,
     category: 'nutrition',
   },
   {
-    id: 4,
+    id: 'AB004',
     name: 'Caballazol 500mg',
     desc: 'Este es un antibiotico para caballos.',
     precioRef: 150,
