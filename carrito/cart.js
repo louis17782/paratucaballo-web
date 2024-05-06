@@ -116,14 +116,19 @@ const generateCartItemHTML = (cartItem) => {
 // Esta función acepta un parámetro llamado `refresh` que por defecto es falso.
 // Si `refresh` es falso entonces simplemente toma la información del carrito y genera el HTML para cada artículo.
 // Si `refresh` es verdadero entonces primero borra todo el contenido del carrito en el DOM y vuelve a cargarlo con la info del carrito.
+// Adicionalmente, va acumulando el total de todos los productos del carrito para mostrarlos en el elemento con el id `total`.
 const generateCart = (refresh = false) => {
   const container = document.getElementById('cart-container');
   const cart = useCart();
+  let total = 0;
 
   if (refresh) container.innerHTML = '';
 
   if (cart.length > 0) {
-    cart.forEach((cartItem) => container.appendChild(generateCartItemHTML(cartItem)));
+    cart.forEach((cartItem) => {
+      container.appendChild(generateCartItemHTML(cartItem))
+      total += cartItem.precioRef * cartItem.quantity;
+    });
   } else {
     const para = document.createElement('p');
     para.classList.add('cart-item');
@@ -132,6 +137,9 @@ const generateCart = (refresh = false) => {
     para.appendChild(message);
     container.appendChild(para);
   }
+
+  const totalDisplay = document.getElementById('total');
+  totalDisplay.innerHTML = `Total: $${total}`;
 };
 
 // Este es un escuchador que ejecuta la función `generateCart` cuando el DOM ha terminado de cargar.
