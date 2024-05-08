@@ -216,6 +216,13 @@ header {
   padding-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.section-us {
+  background-image: url('/Imagenes/fondo3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
 /* Start categoria de productos */
 
 .tarjeta {
@@ -475,7 +482,7 @@ footer, section {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  animation: vibrate 2s infinite linear;
+  animation: vibrate 2s;
 }
 @keyframes vibrate {
   0% {
@@ -779,20 +786,11 @@ footer, section {
     justify-content: center;
     align-items: center;
   }
-  
-   img.izquierda {
-    
+   img.imagesblock {
     width: 500px;
     padding: 40px;
     margin: 10px;
    }
-   img.derecha {
-
-    width: 500px;
-    padding: 40px;
-    margin: 10px;
-   }
-  
    .section-us {
     margin: 100px;
    }
