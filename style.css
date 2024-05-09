@@ -208,6 +208,7 @@ header {
 .project-us > img {
   width: 100%;
   height: auto;
+  padding: 10px;
 }
 .us {
   color: #222;
@@ -791,18 +792,16 @@ footer, section {
     padding: 40px;
     margin: 10px;
    }
-   .section-us {
-    margin: 100px;
-   }
+   
    .project-us > p {
-    color: #222;
     font-size: 30px;
-    align-items: center;
+    text-align: justify;
   }
   .texto1 {
     margin-inline: 50px;
   }
   .project-us > p::first-letter {
     font-size: 2em;
+    color: rgb(218, 169, 35);
   }
 }
