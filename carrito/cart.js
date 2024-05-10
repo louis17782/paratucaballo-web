@@ -6,7 +6,7 @@ const useCart = () => localStorage.getItem('carrito') ? JSON.parse(localStorage.
 const decreaseCartItemQuantity = (cartItemId) => {
   const cart = useCart();
 
-  const cartItem = cart.find((cartItem) => cartItem.id === cartItemId);
+  const cartItem = cart.find((cartItem) => cartItem['CÓDIGO'] === cartItemId);
   if (cartItem.quantity > 1) cartItem.quantity -= 1;
 
   localStorage.setItem('carrito', JSON.stringify(cart));
@@ -17,7 +17,7 @@ const decreaseCartItemQuantity = (cartItemId) => {
 const increaseCartItemQuantity = (cartItemId) => {
   const cart = useCart();
 
-  const cartItem = cart.find((cartItem) => cartItem.id === cartItemId);
+  const cartItem = cart.find((cartItem) => cartItem['CÓDIGO'] === cartItemId);
   if (cartItem.quantity < 100) cartItem.quantity += 1;
 
   localStorage.setItem('carrito', JSON.stringify(cart));
@@ -30,7 +30,7 @@ const increaseCartItemQuantity = (cartItemId) => {
 const removeCartItem = (cartItemId) => {
   const cart = useCart();
 
-  const filteredCart = cart.filter((cartItem) => cartItem.id !== cartItemId);
+  const filteredCart = cart.filter((cartItem) => cartItem['CÓDIGO'] !== cartItemId);
 
   localStorage.setItem('carrito', JSON.stringify(filteredCart));
   generateCart(true);
@@ -48,12 +48,12 @@ const generateCartItemHTML = (cartItem) => {
   const title = document.createElement('p');
   title.classList.add('product-title');
 
-  const titleText = document.createTextNode(cartItem.name);
+  const titleText = document.createTextNode(cartItem['PRODUCTO']);
 
   const code = document.createElement('p');
   code.classList.add('product-code');
 
-  const codeText = document.createTextNode(cartItem.id);
+  const codeText = document.createTextNode(cartItem['CÓDIGO']);
 
   const cartItemAmounts = document.createElement('div');
   cartItemAmounts.classList.add('cart-item-amounts');
@@ -61,14 +61,14 @@ const generateCartItemHTML = (cartItem) => {
   const itemPrice = document.createElement('strong');
   itemPrice.classList.add('item-price');
 
-  const itemPriceValue = document.createTextNode(`$${cartItem.precioRef * cartItem.quantity}`);
+  const itemPriceValue = document.createTextNode(`$${cartItem['pronto pago'] * cartItem.quantity}`);
   
   const amounts = document.createElement('div');
   amounts.classList.add('amounts');
 
   const decreaseButton = document.createElement('button');
   decreaseButton.classList.add('cart-item-button');
-  decreaseButton.addEventListener('click', () => decreaseCartItemQuantity(cartItem.id));
+  decreaseButton.addEventListener('click', () => decreaseCartItemQuantity(cartItem['CÓDIGO']));
 
   const minusSign = document.createElement('i');
   minusSign.classList.add('fa-solid', 'fa-minus');
@@ -79,14 +79,14 @@ const generateCartItemHTML = (cartItem) => {
 
   const increaseButton = document.createElement('button');
   increaseButton.classList.add('cart-item-button');
-  increaseButton.addEventListener('click', () => increaseCartItemQuantity(cartItem.id));
+  increaseButton.addEventListener('click', () => increaseCartItemQuantity(cartItem['CÓDIGO']));
 
   const plusSign = document.createElement('i');
   plusSign.classList.add('fa-solid', 'fa-plus');
 
   const removeItemButton = document.createElement('button');
   removeItemButton.classList.add('remove-item');
-  removeItemButton.addEventListener('click', () => removeCartItem(cartItem.id));
+  removeItemButton.addEventListener('click', () => removeCartItem(cartItem['CÓDIGO']));
 
   const removeItemButtonText = document.createTextNode('QUITAR');
 
@@ -127,7 +127,7 @@ const generateCart = (refresh = false) => {
   if (cart.length > 0) {
     cart.forEach((cartItem) => {
       container.appendChild(generateCartItemHTML(cartItem))
-      total += cartItem.precioRef * cartItem.quantity;
+      total += cartItem['pronto pago'] * cartItem.quantity;
     });
   } else {
     const para = document.createElement('p');
