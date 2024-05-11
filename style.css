@@ -202,8 +202,9 @@ header {
 /* nosotros*/
 .project-us > p {
   color: #222;
-  font-size: 40px;
+  font-size: 20px;
   padding: 30px;
+  font-family: system-ui;
 }
 .project-us > img {
   width: 100%;
@@ -213,9 +214,9 @@ header {
 .us {
   color: #222;
   text-align: center;
-  font-size: 35px;
-  padding-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  padding-top: 20px;
+  
 }
 .section-us {
   background-image: url('/Imagenes/fondo3.jpg');
@@ -368,7 +369,7 @@ h2 {
 }
 .footer-info, li {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   font-family: didot;  
   text-align: center;
   justify-content: center;
@@ -764,9 +765,8 @@ footer, section {
     width: 500px;
   }
   .mapa {
-   margin-top: 70px;
-   height: 100px;
-
+   margin-top: 0px;
+   width: 800px;
   }  
   .whatsapp-btn {
     position: fixed;
@@ -786,15 +786,16 @@ footer, section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
   }
    img.imagesblock {
     width: 500px;
-    padding: 40px;
     margin: 10px;
+    border-radius: 70px;
+    box-shadow: #333;
    }
-   
    .project-us > p {
-    font-size: 30px;
+    font-size: 25px;
     text-align: justify;
   }
   .texto1 {
