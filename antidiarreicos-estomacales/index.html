@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para tu caballo</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button type="button" class="menu-toggle" onclick="showMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <nav id="navbar" class="hidden">
+    <div id="navlinks" class="navlinks-container hidden">
+        <a class="nav-logo" href="../index.html">
+          <img src="Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+        </a>
+      <button
+        type="button"
+        title="Show Menu"
+        onclick="hideMenu()"
+        class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="navlinks">
+        <li><a class="nav-link" href="../index.html" rel="noreferrer">Inicio</a></li>
+        <li><a class="nav-link" href="../productos/index.html" rel="noreferrer">Productos</a></li>
+        <li><a class="nav-link" href="../nosotros/index.html" rel="noreferrer">Nosotros</a></li>
+        <li><a class="nav-link" href="../contacto/index.html" rel="noreferrer">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <a href="./index.html" class="logo">
+      <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+    </a>
+  </header>
+  <main>
+    <section class="projects-section">
+      <h1>cuidado del tracto digestivo</h1>
+      <div id="products-container" class="content-grid">
+        <!-- <a href="" class="project-title">
+          <div class="tarjeta">
+            <img class="project-image" src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <div class="contenido">
+              <p class="project-title">aqui va el titulo con descripcion</p>
+            </div>
+          </div>
+        </a>
+        <a href="" class="project-title">
+        <div class="tarjeta">
+          <img class="project-image" src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0"" alt="">
+        <div class="contenido">
+          <p class="project-title">aqui va el titulo con descripcion</p>
+        </div>
+        </div>
+        </a>   -->
+      </div>
+    </section>
+<section class="content-section">
+  <div>
+    <a href="./index.html">
+    <img class="logo-footer"src="/Imagenes/footer/IMG-6148.png" alt="#">
+  </a>
+  </div>
+  <div class="contact-info">
+  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
+  </div>
+  <div class="info">
+    <ul>
+   <li><a class="footer-info" href="../productos/index.html">Productos</a></li>
+   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
+   <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="pagos">
+    <h3>Metodos de pagos</h3>
+    <p>Contra entrega</p>
+    <p>Pago movil</p>
+    <p>Zelle</p>
+    <i class="fa-brands fa-cc-visa"></i>
+    <i class="fa-brands fa-cc-mastercard"></i>
+    <i class="fa-regular fa-handshake"></i>
+  </div>
+</section>
+<footer id="end">
+<p class="horse">© Para Tu Caballo 2024</p>
+<div class="contact-link">
+
+  <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+</footer>
+</main>
+<!--
+  Luis y Rubén del futuro... Este es el código de la ventana modal. Lo malo es que la ventana modal debería ir en la
+  página de productos y no aquí. Así que, cuando terminen, pónganlo en donde debería ir.
+
+  - Rubén del pasado.
+-->
+  <button type="button" onclick="showModal(products[0])">Show Modal</button>
+  <div id="backdrop" class="modal-backdrop modal-hidden" onclick="hideModal()">
+    <div id="modal" class="modal">
+      <img
+        src="https://th.bing.com/th/id/R.1858451a7a03487a0f1991da8958a92e?rik=qUwSzBJ4i8w2Kg&riu=http%3a%2f%2fimages3.memedroid.com%2fimages%2fUPLOADED459%2f5ebc0ca36489e.jpeg&ehk=8UeHAV65z6FUwi2Md06ClYo5jqRuVdxC5eP8fJBS2mI%3d&risl=&pid=ImgRaw&r=0"
+        alt="El Cheems"
+      >
+      <h3>El Cheems</h3>
+      <p>Este es El Cheems, el perro más popular del internet durante los primero años de la década de los 20's.</p>
+      <button type="button">Comprar</button>
+    </div>
+  </div>
+<!-- Hasta acá la ventana modal -->
+<script src="../main.js"></script>
+<script src="../csvToJson.js"></script>
+<script>renderCards('cuidado del tracto digestivo')</script>
+</body>
+</html>

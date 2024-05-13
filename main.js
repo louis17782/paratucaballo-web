@@ -46,12 +46,6 @@ function moveCarouselLeft() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('modal');
-
-  modal.addEventListener('click', (event) => event.stopPropagation());
-})
-
 function showModal(product) {
   console.log(product);
 
@@ -84,78 +78,46 @@ function hideModal() {
   </a>
 */
 
-function checkCart(product) {
-  console.log('Working!');
-  const cart = localStorage.getItem('carrito') ? JSON.parse(localStorage.getItem('carrito')) : [];
+ /*Cambiar el botón "Agregar" por botones
+function toggleButtons() {
+  var addButton = document.getElementById('agregar');
+  var counterDisplay = document.getElementById('counter');
+  var counter = 0;
+ 
+  addButton.innerHTML = '+';
+  addButton.setAttribute('onclick', 'sumar()');
+  addButton.setAttribute('id', 'sumar');
+  addButton.style.marginRight = '15px';
 
-  return cart.some((cartProduct) => cartProduct.id === product.id)
-};
-
-function generateCardHTML(product) {
-  const anchor = document.createElement('a');
-  anchor.classList.add('project-title');
-
-  const card = document.createElement('div');
-  card.classList.add('tarjeta');
-
-  const image = document.createElement('img');
-  image.src = product.imageURL;
-  image.alt = 'Product Image';
-  image.classList.add('project-image');
-
-  const content = document.createElement('div');
-  content.classList.add('content-order');
-  
-  const title = document.createElement('p');
-  title.classList.add('titulo');
-
-  const titleText = document.createTextNode(product.name);
-
-  const subtitle = document.createElement('p');
-  subtitle.classList.add('subtitles');
-
-  const subtitleText = document.createTextNode(product.desc);
-
-  const price = document.createElement('p');
-  price.classList.add('price');
-
-  const priceText = document.createTextNode(`$${product.precioRef}`);
-
-  const buyButton = document.createElement('button');
-  buyButton.type = 'button';
-  buyButton.classList.add('order');
-
-  const buyButtonText = document.createTextNode('Agregar al Carrito');
-  const addedToCart = document.createTextNode('Agregado 👍');
-
-  buyButton.addEventListener('click', (event) => {
-    const carrito = localStorage.getItem('carrito') ? JSON.parse(localStorage.getItem('carrito')) : [];
-    if (!checkCart(product)) {
-      carrito.push({ ...product, quantity: 1 });
-      localStorage.setItem('carrito', JSON.stringify(carrito));
-      event.target.innerText = 'Agregado 👍';
-    };
-  });
-
-  title.appendChild(titleText);
-  subtitle.appendChild(subtitleText);
-  price.appendChild(priceText);
-  checkCart(product) ? buyButton.appendChild(addedToCart) : buyButton.appendChild(buyButtonText);
-  content.appendChild(title);
-  content.appendChild(subtitle);
-  content.appendChild(price);
-  content.appendChild(buyButton);
-  card.appendChild(image);
-  card.appendChild(content);
-  anchor.appendChild(card);
-
-  return anchor;
+  var restarButton = document.createElement('button');
+  restarButton.innerHTML = '-';
+  restarButton.setAttribute('onclick', 'restar()');
+  restarButton.setAttribute('id', 'restar');
+  addButton.parentNode.insertBefore(restarButton, counterDisplay);
 }
 
-function renderCards(products, category) {
-  const container = document.getElementById('products-container');
-
-  const filteredProducts = products.filter((product) => product.category === category);
-
-  filteredProducts.forEach((product) => container.appendChild(generateCardHTML(product)));
+function sumar() {
+  var counterDisplay = document.getElementById('counter');
+  var counter = parseInt(counterDisplay.textContent);
+  counter++;
+  counterDisplay.textContent = counter;
 }
+
+function restar() {
+  var counterDisplay = document.getElementById('counter');
+  var counter = parseInt(counterDisplay.textContent);
+  if (counter > 1) {
+    counter--;
+    counterDisplay.textContent = counter;
+  } else if (counter === 1) {
+    counterDisplay.textContent = 'agregar';
+    var restarButton = document.getElementById('restar');
+    if (restarButton) {
+      restarButton.remove();
+    }
+    var addButton = document.getElementById('agregar');
+    addButton.innerHTML = 'agregar';
+    addButton.setAttribute('onclick', 'toggleButtons()');
+    addButton.setAttribute('id', 'agregar');
+  }
+  */
