@@ -713,12 +713,15 @@ footer, section {
   .logo-footer {
     width: 300px;
     margin-left: 100px;
-    position: relative;
   }
   .content-section{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    
+  }
+  .grid {
+   
   }
   .contact-link {
   font-size: 3rem;
@@ -733,13 +736,7 @@ footer, section {
     margin-inline-end: auto;
     margin-left: 80px;
   }
-  .contact-info > h2 {
-    margin-bottom: 10px;
-    margin-left: 50px;
-  }
-  .info {
-    margin-left: 70px;
-  }
+ 
   /*CONTACTO*/
   .contenedor1 {
     display: flex;
