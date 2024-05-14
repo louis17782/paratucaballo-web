@@ -17,7 +17,7 @@ h4 {
     font-size: 40px;
     padding: 10%;
     text-align: center;
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
 }
 body {
   background-color: transparent;
@@ -47,7 +47,7 @@ body {
 }
 label {
   color: #222;
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
 }
 .campo label {
   display: block;
@@ -230,7 +230,7 @@ header {
   color: #222;
   padding: 10px;
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 .textimg {
   font-size: 20px;
@@ -238,7 +238,7 @@ header {
 .subtitles {
   color: #222;
   font-size: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   padding: 10px;
 }
 .tarjeta img {
@@ -255,7 +255,7 @@ header {
 .diseños {
   color: #222;
   font-size: 25px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 
@@ -282,7 +282,7 @@ header {
   margin: 0;
   color: white;
   font-size: 30px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 .video {
@@ -300,10 +300,12 @@ header {
     margin-left: 100px;
     position: relative;
 }
+.contact-info {
+  text-align: center;
+  padding-bottom: 50px;
+}
 .content-section{
  background-color: #222;
-
- 
 }
 .contact-link {
   font-size: 2.4rem;
@@ -323,7 +325,7 @@ header {
   font-size: 15px;
   justify-content: center;
   text-align: center;
-  font-family:didot;
+  font-family: 'Arial', sans-serif;
   line-height: 2.5;
 }
 .pagos > i {
@@ -334,7 +336,7 @@ header {
     text-align: center;
 }
 h2 {
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   text-align: center;
   color: white;
 }
@@ -345,8 +347,8 @@ h2 {
 }
 .footer-info, li {
   color: white;
-  font-size: 20px;
-  font-family: didot;  
+  font-size: 15px;
+  font-family: 'Arial', sans-serif;  
   text-align: center;
   justify-content: center;
   margin-bottom: 20px;
@@ -354,7 +356,7 @@ h2 {
 }
 .contact-info > h2 {
   font-size: 15px;
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   margin-left: 50px;
   margin-right: 50px;
   font-weight: 200;
@@ -370,7 +372,7 @@ footer {
 
 }
 .horse {
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   color: #222;
   font-size: 20px;
   margin-inline-end: auto;
@@ -381,7 +383,7 @@ footer {
 
 
 h1 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
   font-size: 50px;
   color: #10102E;
@@ -528,7 +530,7 @@ footer, section {
     padding: 35px 0;
   }
   h1 {
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     font-size: 50px;
     border-bottom: 5px solid #E7DD11;
@@ -688,22 +690,35 @@ footer, section {
   /*footer*/
   .logo-footer {
     width: 300px;
-    margin-left: 100px;
+    margin: 0;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  p:first-child {
+    margin-bottom: 10px;
   }
   .content-section{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: start;
-    
+    align-items: center;
+  }
+  .footer-info {
+    text-align:end;
+    margin-left: 130px;
+  }
+ .grid {
+  align-self: start;
+  margin-top: 100px;
+ }
+  .info {
+    text-align: center;
   }
   .contact-link {
-  font-size: 3rem;
-  flex-direction: row;
-  justify-content: flex-end;
   margin-right: 100px;
   }
   .horse {
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
     color: #222;
     font-size: 20px;
     margin-inline-end: auto;
@@ -750,7 +765,4 @@ footer, section {
     border-radius: 50%;
     font-size: 70px;
   }
-   /* nosotros*/
-
- 
 }
