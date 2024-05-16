@@ -487,42 +487,6 @@ footer, section {
   border-radius: 50%;
   font-size: 60px;
 }
-/* incio de galerias en lo sets */
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url('/Imagenes/fondo\ petos.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; 
-}
-
-.main-image {
-  margin-bottom: 20px;
-}
-
-.main-image img {
-  max-width: 100%;
-  max-height: 500px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-  padding: 5px;
-}
-
-.thumbnails {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.thumbnails img {
-  width: 100px; 
-  margin: 5px;
-  cursor: pointer;
-}
-
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   h1 {
@@ -733,11 +697,9 @@ footer, section {
     background-attachment: fixed;
     background-position: center; 
   }
-  
   .form1 {
     flex: 1;
   }
-  
   .mapa, .formulario {
     margin-top: 0px; 
     margin-bottom: 30px;
@@ -754,7 +716,6 @@ footer, section {
     bottom: 20px;
     right: 20px;
   }
-  
   .whatsapp-btn {
     width: 60px;
     height: 150px;
