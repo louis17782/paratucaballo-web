@@ -2,7 +2,9 @@ h2 {
   color: black;
   margin: 25px 0;
 }
-
+.navcart {
+  font-size: 25px;
+}
 .page-container,
 .cart-item,
 .cart-item-button,
