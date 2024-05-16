@@ -241,10 +241,9 @@ header {
   font-family: 'Arial', sans-serif;
   padding: 10px;
 }
-.tarjeta img {
+.tarjeta > img {
   width: 100%;
   height: auto;
-  
 }
 .contenido, .order {
   padding: 10px;
@@ -335,7 +334,7 @@ header {
 #contactnav {
     text-align: center;
 }
-h2 {
+.words {
   font-family: 'Arial', sans-serif;
   text-align: center;
   color: white;
@@ -354,7 +353,7 @@ h2 {
   margin-bottom: 20px;
   
 }
-.contact-info > h2 {
+.contact-info > .words {
   font-size: 15px;
   font-family: 'Arial', sans-serif;
   margin-left: 50px;
@@ -623,7 +622,7 @@ footer, section {
   .carr-pos-3 {
     transform: translateX(calc(-100% * 2 / 3));
   }
-   /* Categoria de productos*/
+   /* Categoria de productos */
    .tarjeta {
     width: 250px;
     height: auto;
@@ -631,6 +630,7 @@ footer, section {
     margin: 40px ;
     display: inline-block;
   }
+  
   .tarjeta img {
     width: 100%;
     height: auto;
@@ -638,13 +638,12 @@ footer, section {
   .content-grid {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
     justify-content: center;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0px auto; 
   }
   .contenido {
-    padding: 10px;
+    
   }
   .project-title, .project-description {
     margin: 0;
