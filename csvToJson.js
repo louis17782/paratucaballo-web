@@ -56,7 +56,7 @@ function generateCardHTML(product) {
   card.classList.add('tarjeta');
 
   const image = document.createElement('img');
-  image.src = `/Imagenes/productos/${product['CÓDIGO'].toLowerCase()}.jpg`;
+  image.src = `../Imagenes/productos/${product['CÓDIGO'].toLowerCase()}.jpg`;
   image.alt = 'Product Image';
   image.classList.add('project-image');
 
