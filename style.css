@@ -17,7 +17,7 @@ h4 {
     font-size: 40px;
     padding: 10%;
     text-align: center;
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
 }
 body {
   background-color: transparent;
@@ -47,7 +47,7 @@ body {
 }
 label {
   color: #222;
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
 }
 .campo label {
   display: block;
@@ -200,10 +200,7 @@ header {
   width: 100%;
 }
 /* nosotros*/
-.about {
-  color: #222;
-  font-size: 40px;
-}
+
 /* Start categoria de productos */
 
 .tarjeta {
@@ -233,7 +230,7 @@ header {
   color: #222;
   padding: 10px;
   font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 .textimg {
   font-size: 20px;
@@ -241,13 +238,12 @@ header {
 .subtitles {
   color: #222;
   font-size: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   padding: 10px;
 }
-.tarjeta img {
+.tarjeta > img {
   width: 100%;
   height: auto;
-  
 }
 .contenido, .order {
   padding: 10px;
@@ -258,7 +254,7 @@ header {
 .diseños {
   color: #222;
   font-size: 25px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 
@@ -285,7 +281,7 @@ header {
   margin: 0;
   color: white;
   font-size: 30px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 .video {
@@ -303,10 +299,12 @@ header {
     margin-left: 100px;
     position: relative;
 }
+.contact-info {
+  text-align: center;
+  padding-bottom: 50px;
+}
 .content-section{
  background-color: #222;
-
- 
 }
 .contact-link {
   font-size: 2.4rem;
@@ -326,7 +324,7 @@ header {
   font-size: 15px;
   justify-content: center;
   text-align: center;
-  font-family:didot;
+  font-family: 'Arial', sans-serif;
   line-height: 2.5;
 }
 .pagos > i {
@@ -336,8 +334,8 @@ header {
 #contactnav {
     text-align: center;
 }
-h2 {
-  font-family: didot;
+.words {
+  font-family: 'Arial', sans-serif;
   text-align: center;
   color: white;
 }
@@ -349,15 +347,15 @@ h2 {
 .footer-info, li {
   color: white;
   font-size: 15px;
-  font-family: didot;  
+  font-family: 'Arial', sans-serif;  
   text-align: center;
   justify-content: center;
   margin-bottom: 20px;
   
 }
-.contact-info > h2 {
+.contact-info > .words {
   font-size: 15px;
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   margin-left: 50px;
   margin-right: 50px;
   font-weight: 200;
@@ -373,7 +371,7 @@ footer {
 
 }
 .horse {
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   color: #222;
   font-size: 20px;
   margin-inline-end: auto;
@@ -384,7 +382,7 @@ footer {
 
 
 h1 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
   font-size: 50px;
   color: #10102E;
@@ -463,6 +461,24 @@ footer, section {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  animation: vibrate 2s;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .whatsapp-btn {
@@ -471,40 +487,13 @@ footer, section {
   border-radius: 50%;
   font-size: 60px;
 }
-/* incio de galerias en lo sets */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  row-gap: 100px;
-  column-gap: 70px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 100px;
-}
-
-.gallery-item {
-  overflow: hidden;
-}
-
-.gallery-item img {
-  display: flex;
-  max-width: 100%;
-  height: auto;
-  flex-wrap: wrap;
-  align-content: space-between;
-  background-color: grey ;
-  padding: 10px;
-  
-}
-
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   h1 {
     padding: 35px 0;
   }
   h1 {
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     font-size: 50px;
     border-bottom: 5px solid #E7DD11;
@@ -597,7 +586,7 @@ footer, section {
   .carr-pos-3 {
     transform: translateX(calc(-100% * 2 / 3));
   }
-   /* Categoria de productos*/
+   /* Categoria de productos */
    .tarjeta {
     width: 250px;
     height: auto;
@@ -605,6 +594,7 @@ footer, section {
     margin: 40px ;
     display: inline-block;
   }
+  
   .tarjeta img {
     width: 100%;
     height: auto;
@@ -612,13 +602,9 @@ footer, section {
   .content-grid {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
     justify-content: center;
     text-align: center;
-    margin: 0 auto; 
-  }
-  .contenido {
-    padding: 10px;
+    margin: 0px auto; 
   }
   .project-title, .project-description {
     margin: 0;
@@ -644,7 +630,7 @@ footer, section {
     margin: 0 auto; 
   }
   .logos1 {
-    width: 250px;
+    width: 165px;
     height: auto;
     overflow: hidden;
     margin: 40px ;
@@ -664,34 +650,41 @@ footer, section {
   /*footer*/
   .logo-footer {
     width: 300px;
-    margin-left: 100px;
-    position: relative;
+    margin: 0;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  p:first-child {
+    margin-bottom: 10px;
   }
   .content-section{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
   }
+  .footer-info {
+    text-align:end;
+    margin-left: 130px;
+  }
+ .grid {
+  align-self: start;
+  margin-top: 100px;
+ }
+  .info {
+    text-align: center;
+  }
   .contact-link {
-  font-size: 3rem;
-  flex-direction: row;
-  justify-content: flex-end;
   margin-right: 100px;
   }
   .horse {
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
     color: #222;
     font-size: 20px;
     margin-inline-end: auto;
     margin-left: 80px;
   }
-  .contact-info > h2 {
-    margin-bottom: 10px;
-    margin-left: 50px;
-  }
-  .info {
-    margin-left: 70px;
-  }
+ 
   /*CONTACTO*/
   .contenedor1 {
     display: flex;
@@ -704,11 +697,9 @@ footer, section {
     background-attachment: fixed;
     background-position: center; 
   }
-  
   .form1 {
     flex: 1;
   }
-  
   .mapa, .formulario {
     margin-top: 0px; 
     margin-bottom: 30px;
@@ -717,16 +708,14 @@ footer, section {
     width: 500px;
   }
   .mapa {
-   margin-top: 70px;
-   height: 100px;
-
+   margin-top: 0px;
+   width: 800px;
   }  
   .whatsapp-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
   }
-  
   .whatsapp-btn {
     width: 60px;
     height: 150px;

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para tu caballo</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./galeria.css">
+  <link rel="stylesheet" href="../carrito/cart.css">
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +16,7 @@
   <nav id="navbar" class="hidden">
     <div id="navlinks" class="navlinks-container hidden">
         <a class="nav-logo" href="../index.html">
-          <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+          <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
         </a>
       <button
         type="button"
@@ -25,73 +27,98 @@
       </button>
       <ul class="navlinks">
         <li><a class="nav-link" href="../index.html" rel="noreferrer">Inicio</a></li>
-        <li><a class="nav-link" href="../Productos/index.html" rel="noreferrer">Productos</a></li>
-        <li><a class="nav-link" href="../nosotros/index.html" rel="noreferrer">Nosotros</a></li>
-        <li><a class="nav-link" href="../contacto/index.html" rel="noreferrer">Contacto</a></li>
+        <li><a class="nav-link" href="../productos/" rel="noreferrer">Productos</a></li>
+        <li><a class="nav-link" href="../nosotros/" rel="noreferrer">Nosotros</a></li>
+        <li><a class="nav-link" href="../contacto/" rel="noreferrer">Contacto</a></li>
+        <li><a class="navcart" href="../carrito/" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </div>
   </nav>
   <header id="header">
     <a href="../index.html" class="logo">
-      <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+      <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
     </a>
   </header>
   <main>
 <section class="section-diseños">
   <h1>Nuestros diseños</h1>
-    <p class="diseños"><em>Mejora el PERFORMANCE de tu caballo con nuestros productos de Alta Gama!</em></p>
+       <div class="gallery">
+        <p class="diseños"><em>Mejora el PERFORMANCE de tu caballo con nuestros productos de Alta Gama!</em></p>
       <p class="diseños"><em>Creadores de los petos artísticos</em></p>
       <p class="diseños">🥇</p>
-      <div class="gallery">
-        <div class="gallery-item"><img src="/Imagenes/SETS/set1.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set2.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set3.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set4.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set5.jpg" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set6.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set7.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set8.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set9.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set10.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set11.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set12.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set13.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set14.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set15.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set16.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set17.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set18.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set19.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set20.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set21.JPG" alt="#"></div>
-        <div class="gallery-item"><img src="/Imagenes/SETS/set22.JPG" alt="#"></div>
+        <div class="main-image">
+          <img id="mainImg" src="/Imagenes/SETS/set1.JPG" alt="#">
       </div>
+       <div class="thumbnails">
+          <img id="imgnail" src="/Imagenes/SETS/set1.JPG" alt="set1" onclick="displayImage('/Imagenes/SETS/set1.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set2.JPG" alt="set2" onclick="displayImage('/Imagenes/SETS/set2.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set3.JPG" alt="set3" onclick="displayImage('/Imagenes/SETS/set3.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set4.JPG" alt="set4" onclick="displayImage('/Imagenes/SETS/set4.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set5.JPG" alt="set5" onclick="displayImage('/Imagenes/SETS/set5.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set7.JPG" alt="set7" onclick="displayImage('/Imagenes/SETS/set7.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set8.JPG" alt="set8" onclick="displayImage('/Imagenes/SETS/set8.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set9.JPG" alt="set9" onclick="displayImage('/Imagenes/SETS/set9.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set10.JPG" alt="set10" onclick="displayImage('/Imagenes/SETS/set10.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set11.JPG" alt="set11" onclick="displayImage('/Imagenes/SETS/set11.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set12.JPG" alt="set12" onclick="displayImage('/Imagenes/SETS/set12.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set13.JPG" alt="set13" onclick="displayImage('/Imagenes/SETS/set13.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set14.JPG" alt="set14" onclick="displayImage('/Imagenes/SETS/set14.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set15.JPG" alt="set15" onclick="displayImage('/Imagenes/SETS/set15.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set16.JPG" alt="set16" onclick="displayImage('/Imagenes/SETS/set16.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set17.JPG" alt="set17" onclick="displayImage('/Imagenes/SETS/set17.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set18.JPG" alt="set18" onclick="displayImage('/Imagenes/SETS/set18.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set19.JPG" alt="set19" onclick="displayImage('/Imagenes/SETS/set19.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set20.JPG" alt="set20" onclick="displayImage('/Imagenes/SETS/set20.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set21.JPG" alt="set21" onclick="displayImage('/Imagenes/SETS/set21.JPG')">
+          <img id="imgnail" src="/Imagenes/SETS/set22.JPG" alt="set22" onclick="displayImage('/Imagenes/SETS/set22.JPG')">
+          
+        </div>
+       </div>
 </section>
+<div class="whatsapp-btn">
+  <a href="https://wa.me/584145085416" target="_blank">
+    <i class="fa-brands fa-whatsapp" style="color: #119213;"></i>
+  </a>
+</div>
 <section class="content-section">
   <div>
-    <a href="../index.html">
-    <img class="logo-footer"src="/Imagenes/footer/IMG-6148.png" alt="#">
+    <a href="./index.html">
+    <img class="logo-footer"src="../Imagenes/footer/IMG-6148.png" alt="#">
   </a>
-  </div>
+</div>
+  <div class="grid">
   <div class="contact-info">
-  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
+  <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
+  <p>Realizamos envios a nivel nacional por ZOOM business</p>
   </div>
+</div>
+  <div class="grid">
   <div class="info">
     <ul>
-   <li><a class="footer-info" href="../productos/index.html">Productos</a></li>
-   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
-   <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
+   <li><a class="footer-info" href="../productos/">Productos</a></li>
+   <li><a class="footer-info" href="../nosotros/">Nosotros</a></li>
+   <li><a class="footer-info" href="../contacto/">Contacto</a></li>
     </ul>
   </div>
+</div>
+<div class="grid">
   <div class="pagos">
     <h3>Metodos de pagos</h3>
-    <p>Contra entrega</p>
-    <p>Pago movil</p>
-    <p>Zelle</p>
+    <p class="letter">Contra entrega</p>
+    <p class="letter">Pago movil</p>
+    <p class="letter">Zelle</p>
     <i class="fa-brands fa-cc-visa"></i>
     <i class="fa-brands fa-cc-mastercard"></i>
     <i class="fa-regular fa-handshake"></i>
   </div>
+</div>
+<div class="grid">
+  <div class="pagos">
+    <h3>horarios de atención</h3>
+    <p class="letter">Lunes a Sabados</p>
+    <p class="letter">9 am - 5pm</p>
+  </div>
+</div>
 </section>
 <footer id="end">
 <p class="horse">© Para Tu Caballo 2024</p>
@@ -103,7 +130,6 @@
 </div>
 </footer>
 </main>
-<script src="main.js"></script>
-<script src="products.js"></script>
+<script src="set.js"></script>
 </body>
 </html>

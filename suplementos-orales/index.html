@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para tu caballo</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../carrito/cart.css">
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
   <nav id="navbar" class="hidden">
     <div id="navlinks" class="navlinks-container hidden">
         <a class="nav-logo" href="../index.html">
-          <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+          <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
         </a>
       <button
         type="button"
@@ -28,17 +29,18 @@
         <li><a class="nav-link" href="../productos/index.html" rel="noreferrer">Productos</a></li>
         <li><a class="nav-link" href="../nosotros/index.html" rel="noreferrer">Nosotros</a></li>
         <li><a class="nav-link" href="../contacto/index.html" rel="noreferrer">Contacto</a></li>
+        <li><a class="navcart" href="../carrito/" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </div>
   </nav>
   <header id="header">
     <a href="../index.html" class="logo">
-      <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+      <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
     </a>
   </header>
   <main>
     <section class="projects-section">
-        <h1>suplementos orales</h1>
+        <h1>Suplementos orales</h1>
         <div id="products-container" class="content-grid">
           <!-- <a href="" class="project-title">
             <div class="tarjeta">
@@ -58,32 +60,46 @@
           </a>   -->
         </div>
       </section>
-<section class="content-section">
-  <div>
-    <a href="../index.html">
-    <img class="logo-footer"src="/imagenes/footer/IMG-6148.png" alt="#">
-  </a>
-  </div>
-  <div class="contact-info">
-  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
-  </div>
-  <div class="info">
-    <ul>
-   <li><a class="footer-info" href="../productos/index.html">Productos</a></li>
-   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
-   <li><a class="footer-info" href="../contacto/index.html">Contactanos</a></li>
-    </ul>
-  </div>
-  <div class="pagos">
-    <h3>Metodos de pagos</h3>
-    <p>Contra entrega</p>
-    <p>Pago movil</p>
-    <p>Zelle</p>
-    <i class="fa-brands fa-cc-visa"></i>
-    <i class="fa-brands fa-cc-mastercard"></i>
-    <i class="fa-regular fa-handshake"></i>
-  </div>
-</section>
+      <section class="content-section">
+        <div>
+          <a href="./index.html">
+          <img class="logo-footer"src="../Imagenes/footer/IMG-6148.png" alt="#">
+        </a>
+      </div>
+        <div class="grid">
+        <div class="contact-info">
+        <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
+        <p>Realizamos envios a nivel nacional por ZOOM business</p>
+        </div>
+      </div>
+        <div class="grid">
+        <div class="info">
+          <ul>
+         <li><a class="footer-info" href="./productos/index.html">Productos</a></li>
+         <li><a class="footer-info" href="./nosotros/index.html">Nosotros</a></li>
+         <li><a class="footer-info" href="./contacto/index.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="pagos">
+          <h3>Metodos de pagos</h3>
+          <p class="letter">Contra entrega</p>
+          <p class="letter">Pago movil</p>
+          <p class="letter">Zelle</p>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-regular fa-handshake"></i>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="pagos">
+          <h3>horarios de atención</h3>
+          <p class="letter">Lunes a Sabados</p>
+          <p class="letter">9 am - 5pm</p>
+        </div>
+      </div>
+      </section>
 <footer id="end">
 <p class="horse">© Para Tu Caballo 2024</p>
 <div class="contact-link">
@@ -95,7 +111,7 @@
 </footer>
 </main>
 <script src="../main.js"></script>
-<script src="../products.js"></script>
-<script>renderCards(products, 'antibiotics')</script>
+<script src="../csvToJson.js"></script>
+<script>renderCards('suplementos orales')</script>
 </body>
 </html>

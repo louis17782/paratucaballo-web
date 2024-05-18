@@ -6,9 +6,119 @@
   <title>Carrito</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="./cart.css">
+  <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="cart-container"></div>
+  <button type="button" class="menu-toggle" onclick="showMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <nav id="navbar" class="hidden">
+    <div id="navlinks" class="navlinks-container hidden">
+        <a class="nav-logo" href="..">
+          <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+        </a>
+      <button
+        type="button"
+        title="Show Menu"
+        onclick="hideMenu()"
+        class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="navlinks">
+        <li><a class="nav-link" href=".." rel="noreferrer">Inicio</a></li>
+        <li><a class="nav-link" href="../productos/" rel="noreferrer">Productos</a></li>
+        <li><a class="nav-link" href="../nosotros/" rel="noreferrer">Nosotros</a></li>
+        <li><a class="nav-link" href="../contacto/" rel="noreferrer">Contacto</a></li>
+        <li><a class="navcart" href="#" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <header id="header">
+    <a href=".." class="logo">
+      <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+    </a>
+  </header>
+  <h1>Tu Carrito</h1>
+  <div class="page-container">
+    <main class="cart-page">
+      <h2>Tus Artículos</h2>
+      <ul id="cart-container"></ul>
+    </main>
+    <aside class="order-page">
+      <h2>Tu Orden</h2>
+      <div class="order-container">
+        <p class="total" id="total"></p>
+        <p class="total-notice">Complete el formulario para procesar su order.</p>
+        <form class="order-form">
+          <label>
+            Nombre Completo
+            <input type="text" name="nombre" id="nombre">
+          </label>
+          <label>
+            Número Telefónico
+            <input type="tel" name="telf" id="telf">
+          </label>
+          <label>
+            Correo Electrónico
+            <input type="email" name="email" id="email">
+          </label>
+          <button type="submit">
+            ORDENAR
+          </button>
+        </form>
+      </div>
+    </aside>
+  </div>
+  <section class="content-section">
+    <div>
+      <a href="./index.html">
+      <img class="logo-footer"src="../Imagenes/footer/IMG-6148.png" alt="#">
+    </a>
+  </div>
+    <div class="grid">
+    <div class="contact-info">
+    <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
+    <p>Realizamos envios a nivel nacional por ZOOM business</p>
+    </div>
+  </div>
+    <div class="grid">
+    <div class="info">
+      <ul>
+     <li><a class="footer-info" href="./productos/index.html">Productos</a></li>
+     <li><a class="footer-info" href="./nosotros/index.html">Nosotros</a></li>
+     <li><a class="footer-info" href="./contacto/index.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="pagos">
+      <h3>Metodos de pagos</h3>
+      <p class="letter">Contra entrega</p>
+      <p class="letter">Pago movil</p>
+      <p class="letter">Zelle</p>
+      <i class="fa-brands fa-cc-visa"></i>
+      <i class="fa-brands fa-cc-mastercard"></i>
+      <i class="fa-regular fa-handshake"></i>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="pagos">
+      <h3>horarios de atención</h3>
+      <p class="letter">Lunes a Sabados</p>
+      <p class="letter">9 am - 5pm</p>
+    </div>
+  </div>
+  </section>
+  <footer id="end">
+  <p class="horse">© Para Tu Caballo 2024</p>
+  <div class="contact-link">
+  
+    <a href="https://www.instagram.com/paratucaballo"  class="btn contact-details">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+  </footer>
+  <script src="../main.js"></script>
   <script src="./cart.js"></script>
 </body>
 </html>
