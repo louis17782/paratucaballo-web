@@ -32,6 +32,9 @@ body {
   background-attachment: fixed;
   background-position: center; 
 }
+.slidertext {
+  color: #fff;
+}
 
 /*CONTACTO*/
 
