@@ -35,7 +35,24 @@ body {
 .slidertext {
   color: #fff;
 }
+@keyframes rollGold {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 200% 0%;
+  }
+}
 
+.slidertext {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: linear-gradient(10deg, gold, white, gold);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rollGold 4s;
+}
 /*CONTACTO*/
 
 .formulario {
