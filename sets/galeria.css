@@ -9,6 +9,9 @@
     padding: 20px;
     padding-top: 40px;
   }
+  .mainImg {
+    display: none;
+  }
   @media only screen and (width >= 1024px) {
   .gallery {
     display: flex;
