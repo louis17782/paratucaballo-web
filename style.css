@@ -282,10 +282,10 @@ header {
   background-color: #efb810 ;  
 }
 .contenido:hover {
-  background-color: #5a3900;
+  background-color: #f0e68c;;
 }
 .order:hover {
-  background-color: #5a3900;
+  background-color: #f0e68c;;
 }
 .price {
   color: #222;
@@ -608,15 +608,17 @@ footer, section {
   }
    /* Categoria de productos */
    .tarjeta {
+    position: relative;
     width: 250px;
-    height: 450px;
+    height: 450px;   
     overflow: hidden;
-    margin: 40px ;
+    margin: 40px;
     display: inline-block;
+    text-align: center;
   }
   .tarjeta img {
     width: 100%;
-    height: 250px;
+    height: auto; 
   }
   .content-grid {
     display: flex;
@@ -631,24 +633,61 @@ footer, section {
     font-size: 20px;
   }
   .contenido {
-    margin-top: 50px;
+    position: relative;
+    height: 100%;   
   }
   .textimg, .titulo {
     padding: 0px;
     font-size: 20px;
   }
-  .subtitles {
-    position: flex;
-    flex-direction: column;
+  .subtitles {  
+    font-size: 15px;  
     margin-top: 10px;
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
   }
-  .order, .price{
-    display: inline-block;
-    margin-top: 5px;
+  .order{
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: auto; 
  }
+ .price {
+  position: absolute;
+  bottom: 10px;
+  right: 120px;
+  width:  100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .contenido.ingresar, .pro {
+    background-color: white;
+    padding: 0px; 
+ }
+ .project-title .more {
+  padding: 20px;
+  margin-top: 10px;
+ }
+ .pro {
+    width: 300px;
+    height: 450px;   
+    overflow: hidden;
+    margin: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+ }
+ .contenido.ingresar {
+  background-color: #d9a200;
+ }
+.contenido:hover {
+  background-color: #f0e68c;
+}
+/*end categoria*/
   .content-logo {
     display: flex;
     flex-wrap: wrap;
