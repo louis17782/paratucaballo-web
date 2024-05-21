@@ -608,15 +608,17 @@ footer, section {
   }
    /* Categoria de productos */
    .tarjeta {
+    position: relative; /*si no funciona borrar*/
     width: 250px;
-    height: 450px;
+    height: 450px;   
     overflow: hidden;
-    margin: 40px ;
+    margin: 40px;
     display: inline-block;
+    text-align: center;
   }
   .tarjeta img {
     width: 100%;
-    height: 250px;
+    height: auto; /*250px*/
   }
   .content-grid {
     display: flex;
@@ -631,12 +633,14 @@ footer, section {
     font-size: 20px;
   }
   .contenido {
-    margin-top: 50px;
+    position: relative;
+    height: 100%;   /*margin top 50px es lo unico que estaba aqui*/
   }
   .textimg, .titulo {
     padding: 0px;
     font-size: 20px;
   }
+  /*
   .subtitles {
     position: flex;
     flex-direction: column;
@@ -645,10 +649,57 @@ footer, section {
     text-align: center;
     align-items: center;
   }
-  .order, .price{
-    display: inline-block;
-    margin-top: 5px;
+  */
+  .subtitles {  /*borrar todo esto*/
+    font-size: 15px;  
+    margin-top: 10px;
+  }
+  .order{
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: auto; /*display: inline-block; aqui estaba esto*/
+     /*margin-top: 5px;*/
  }
+ /*si no funciona borrar este price*/
+ .price {
+  position: absolute;
+  bottom: 10px;
+  right: 120px;
+  width:  100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .contenido.ingresar, .pro {
+    background-color: white;
+    padding: 0px; 
+ }
+ .project-title .more {
+ /*background-color: #efb810; */
+  padding: 20px;
+  margin-top: 10px;
+ }
+ .pro {
+    width: 300px;
+    height: 450px;   
+    overflow: hidden;
+    margin: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+ }
+ .contenido.ingresar {
+  background-color: #d9a200;
+ }
+.contenido:hover {
+  background-color: #f0e68c;
+}
   .content-logo {
     display: flex;
     flex-wrap: wrap;
