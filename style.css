@@ -32,7 +32,27 @@ body {
   background-attachment: fixed;
   background-position: center; 
 }
+.slidertext {
+  color: #fff;
+}
+@keyframes rollGold {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 200% 0%;
+  }
+}
 
+.slidertext {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: linear-gradient(10deg, gold, white, gold);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rollGold 4s;
+}
 /*CONTACTO*/
 
 .formulario {
@@ -589,15 +609,14 @@ footer, section {
    /* Categoria de productos */
    .tarjeta {
     width: 250px;
-    height: auto;
+    height: 450px;
     overflow: hidden;
     margin: 40px ;
     display: inline-block;
   }
-  
   .tarjeta img {
     width: 100%;
-    height: auto;
+    height: 250px;
   }
   .content-grid {
     display: flex;
@@ -606,22 +625,30 @@ footer, section {
     text-align: center;
     margin: 0px auto; 
   }
-  .project-title, .project-description {
+  .project-title {
     margin: 0;
     color: white;
     font-size: 20px;
   }
-  .textimg, .titulo {
-    padding: 10px;
-    font-weight: bold;
+  .contenido {
+    margin-top: 50px;
   }
-  .textimg {
-    font-size: 15px;
+  .textimg, .titulo {
+    padding: 0px;
+    font-size: 20px;
   }
   .subtitles {
+    position: flex;
+    flex-direction: column;
+    margin-top: 10px;
     font-size: 15px;
-    padding: 10px;
+    text-align: center;
+    align-items: center;
   }
+  .order, .price{
+    display: inline-block;
+    margin-top: 5px;
+ }
   .content-logo {
     display: flex;
     flex-wrap: wrap;
