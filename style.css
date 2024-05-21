@@ -608,7 +608,7 @@ footer, section {
   }
    /* Categoria de productos */
    .tarjeta {
-    position: relative; /*si no funciona borrar*/
+    position: relative;
     width: 250px;
     height: 450px;   
     overflow: hidden;
@@ -618,7 +618,7 @@ footer, section {
   }
   .tarjeta img {
     width: 100%;
-    height: auto; /*250px*/
+    height: auto; 
   }
   .content-grid {
     display: flex;
@@ -634,23 +634,13 @@ footer, section {
   }
   .contenido {
     position: relative;
-    height: 100%;   /*margin top 50px es lo unico que estaba aqui*/
+    height: 100%;   
   }
   .textimg, .titulo {
     padding: 0px;
     font-size: 20px;
   }
-  /*
-  .subtitles {
-    position: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
-  }
-  */
-  .subtitles {  /*borrar todo esto*/
+  .subtitles {  
     font-size: 15px;  
     margin-top: 10px;
   }
@@ -663,10 +653,8 @@ footer, section {
     justify-content: space-between;
     align-items: center;
     
-    margin-top: auto; /*display: inline-block; aqui estaba esto*/
-     /*margin-top: 5px;*/
+    margin-top: auto; 
  }
- /*si no funciona borrar este price*/
  .price {
   position: absolute;
   bottom: 10px;
@@ -681,7 +669,6 @@ footer, section {
     padding: 0px; 
  }
  .project-title .more {
- /*background-color: #efb810; */
   padding: 20px;
   margin-top: 10px;
  }
@@ -700,6 +687,7 @@ footer, section {
 .contenido:hover {
   background-color: #f0e68c;
 }
+/*end categoria*/
   .content-logo {
     display: flex;
     flex-wrap: wrap;
