@@ -322,6 +322,7 @@ header {
 .contact-info {
   text-align: center;
   padding-bottom: 50px;
+  padding: 30px;
 }
 .content-section{
  background-color: #222;
@@ -387,13 +388,15 @@ footer {
   align-items: center;
 }
 #end{
+  display: flex;
+  flex-direction: row;
   background-color: #efb810;
 
 }
 .horse {
   font-family: 'Arial', sans-serif;
   color: #222;
-  font-size: 20px;
+  font-size: 15px;
   margin-inline-end: auto;
   margin-left: 20px;
 }
@@ -506,6 +509,17 @@ footer, section {
   height: 130px;
   border-radius: 50%;
   font-size: 60px;
+}
+/* politicas */
+.politic {
+  margin: 40px;
+  color: #222;
+  align-items: center;
+  text-align: center;
+}
+.politic > p::first-letter {
+  font-size: 2em;
+  color: rgb(218, 169, 35);
 }
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
@@ -788,4 +802,13 @@ footer, section {
     border-radius: 50%;
     font-size: 70px;
   }
+  /* politicas */
+.politic {
+  margin: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.const {
+  margin: 20px;
+}
 }
