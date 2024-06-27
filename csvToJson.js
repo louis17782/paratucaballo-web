@@ -47,7 +47,7 @@ function checkCart(product) {
   return cart.some((cartProduct) => cartProduct['CÓDIGO'] === product['CÓDIGO'])
 };
 
-// Esta función, aunque un poco verbosa, genera el HTML para una tarjeta de producto.
+
 function generateCardHTML(product) {
   const anchor = document.createElement('a');
   anchor.classList.add('project-title');
@@ -122,8 +122,3 @@ function renderCards(category) {
     console.log(filteredProducts);
   });
 };
-
-
-// PS: Luis, si lees esto, no te abrumes! Yo sé que son bastantes cosas nuevas y todo, pero dale chance a que lleges al módulo de JavaScript.
-// Yo estoy seguro que luego de ese módulo vas a volver a leer esto y vas a entender todo clarito. 👍
-// De igual forma, por aquí ando yo para que me preguntes vainas. No te de pena preguntarme y pedirme reuniones para explicar. 😅
