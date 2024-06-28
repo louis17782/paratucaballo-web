@@ -144,3 +144,67 @@ const generateCart = (refresh = false) => {
 
 // Este es un escuchador que ejecuta la función `generateCart` cuando el DOM ha terminado de cargar.
 document.addEventListener('DOMContentLoaded', generateCart);
+
+const postSubmission = async (submissionParams) => {
+  return await fetch('http://localhost:3000/api/v1/projects/3/submissions/', {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(submissionParams),
+  })
+};
+
+const convertCartItemToString = (cartItem) => 
+  `Código: ${cartItem['CÓDIGO']} - Producto: ${cartItem['PRODUCTO']} - Precio: ${cartItem['pronto pago']} - Cantidad: ${cartItem['quantity']} - Sub-total: ${cartItem['pronto pago'] * cartItem['quantity']}.`;
+
+const convertCartToOrder = () => {
+  const cart = useCart();
+
+  const order = cart.map(convertCartItemToString);
+
+  const total = document.getElementById('total').innerText;
+
+  order.push(`TOTAL: ${total}`);
+  
+  return order
+}
+
+const submitOrder = (event) => {
+  event.preventDefault();
+
+  const submissionParams = {
+    submission: {
+      data: {
+        nombre: document.getElementById('nombre').value,
+        wa_number: document.getElementById('telf').value,
+        email: document.getElementById('email').value || null,
+        orden: convertCartToOrder(),
+      },
+    },
+  };
+
+  postSubmission(submissionParams)
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.errors) throw new Error(data.errors[0]);
+
+      const messageNotification = document.createElement('p');
+      messageNotification.classList.add('cart-item');
+
+      const message = document.createTextNode('Estamos procesando tu orden');
+  
+      messageNotification.appendChild(message);
+      
+      const form = document.getElementById('order-form');
+
+      form.innerHTML = '';
+      form.appendChild(message);
+
+      localStorage.clear();
+    }).catch((error) => alert(error));
+}
+
+const form = document.getElementById('order-form');
+form.addEventListener('submit', (event) => submitOrder(event));
