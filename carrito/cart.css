@@ -119,6 +119,10 @@ h2 {
   padding: 12px 20px;
 }
 
+.order-form label strong {
+  color:#f55;
+}
+
 .order-form input {
   margin-top: 5px;
   border: none;
