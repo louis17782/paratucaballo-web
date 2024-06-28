@@ -178,7 +178,7 @@ const submitOrder = (event) => {
     submission: {
       data: {
         nombre: document.getElementById('nombre').value,
-        wa_number: document.getElementById('telf').value,
+        wa_number: document.getElementById('prefijo').value.concat(document.getElementById('telf').value),
         email: document.getElementById('email').value || null,
         orden: convertCartToOrder(),
       },
@@ -188,7 +188,8 @@ const submitOrder = (event) => {
   postSubmission(submissionParams)
     .then((response) => response.json())
     .then((data) => {
-      if (data.errors) throw new Error(data.errors[0]);
+      if (data.errors) throw new Error('No pudimos procesar su orden, por favor inténtelo más tarde.');
+      if (useCart().length < 1) throw new Error('El carrito esta vacío, añada un producto al carrito');
 
       const messageNotification = document.createElement('p');
       messageNotification.classList.add('cart-item');
