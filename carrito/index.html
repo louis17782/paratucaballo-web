@@ -54,10 +54,22 @@
             <span>Nombre Completo <strong>*</strong></span>
             <input type="text" name="nombre" id="nombre" required>
           </label>
-          <label>
-            <span>Número Telefónico <strong>*</strong></span>
-            <input type="tel" name="telf" id="telf" required>
-          </label>
+          <div class="phone-number-container">
+            <label class="prefix-label">
+              <span>Prefijo<strong>*</strong></span>
+              <select name="prefijo" id="prefijo" required>
+                <option value="58412" selected>0412</option>
+                <option value="58414">0414</option>
+                <option value="58416">0416</option>
+                <option value="58424">0424</option>
+                <option value="58426">0426</option>
+              </select>
+            </label>
+            <label class="number-label">
+              <span>Número Telefónico <strong>*</strong></span>
+              <input type="tel" name="telf" id="telf" required>
+            </label>
+          </div>
           <label>
             Correo Electrónico
             <input type="email" name="email" id="email">
