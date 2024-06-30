@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
         <li><a class="nav-link" href="../productos/" rel="noreferrer">Productos</a></li>
         <li><a class="nav-link" href="../nosotros/" rel="noreferrer">Nosotros</a></li>
         <li><a class="nav-link" href="../contacto/" rel="noreferrer">Contacto</a></li>
-        <li><a class="nav-link" href="#" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a class="navcart" href="#" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </div>
   </nav>
@@ -48,16 +48,28 @@
       <h2>Tu Orden</h2>
       <div class="order-container">
         <p class="total" id="total"></p>
-        <p class="total-notice">Complete el formulario para procesar su order.</p>
-        <form class="order-form">
+        <p class="total-notice">Complete el formulario para procesar su orden.</p>
+        <form id="order-form" class="order-form">
           <label>
-            Nombre Completo
-            <input type="text" name="nombre" id="nombre">
+            <span>Nombre Completo <strong>*</strong></span>
+            <input type="text" name="nombre" id="nombre" required>
           </label>
-          <label>
-            Número Telefónico
-            <input type="tel" name="telf" id="telf">
-          </label>
+          <div class="phone-number-container">
+            <label class="prefix-label">
+              <span>Prefijo<strong>*</strong></span>
+              <select name="prefijo" id="prefijo" required>
+                <option value="58412" selected>0412</option>
+                <option value="58414">0414</option>
+                <option value="58416">0416</option>
+                <option value="58424">0424</option>
+                <option value="58426">0426</option>
+              </select>
+            </label>
+            <label class="number-label">
+              <span>Número Telefónico <strong>*</strong></span>
+              <input type="tel" name="telf" id="telf" required>
+            </label>
+          </div>
           <label>
             Correo Electrónico
             <input type="email" name="email" id="email">
@@ -74,10 +86,14 @@
       <a href="./index.html">
       <img class="logo-footer"src="../Imagenes/footer/IMG-6148.png" alt="#">
     </a>
-    </div>
+  </div>
+    <div class="grid">
     <div class="contact-info">
-    <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
+    <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
+    <p>Realizamos envios a nivel nacional por ZOOM business</p>
     </div>
+  </div>
+    <div class="grid">
     <div class="info">
       <ul>
      <li><a class="footer-info" href="./productos/index.html">Productos</a></li>
@@ -85,15 +101,25 @@
      <li><a class="footer-info" href="./contacto/index.html">Contacto</a></li>
       </ul>
     </div>
+  </div>
+  <div class="grid">
     <div class="pagos">
       <h3>Metodos de pagos</h3>
-      <p>Contra entrega</p>
-      <p>Pago movil</p>
-      <p>Zelle</p>
+      <p class="letter">Contra entrega</p>
+      <p class="letter">Pago movil</p>
+      <p class="letter">Zelle</p>
       <i class="fa-brands fa-cc-visa"></i>
       <i class="fa-brands fa-cc-mastercard"></i>
       <i class="fa-regular fa-handshake"></i>
     </div>
+  </div>
+  <div class="grid">
+    <div class="pagos">
+      <h3>horarios de atención</h3>
+      <p class="letter">Lunes a Sabados</p>
+      <p class="letter">9 am - 5pm</p>
+    </div>
+  </div>
   </section>
   <footer id="end">
   <p class="horse">© Para Tu Caballo 2024</p>

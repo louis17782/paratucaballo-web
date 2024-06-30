@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para tu caballo</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./nosotros.css">
+  <link rel="stylesheet" href="../carrito/cart.css">
   <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +16,7 @@
   <nav id="navbar" class="hidden">
     <div id="navlinks" class="navlinks-container hidden">
         <a class="nav-logo" href="../index.html">
-          <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+          <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
         </a>
       <button
         type="button"
@@ -28,54 +30,87 @@
         <li><a class="nav-link" href="../productos/index.html" rel="noreferrer">Productos</a></li>
         <li><a class="nav-link" href="#" rel="noreferrer">Nosotros</a></li>
         <li><a class="nav-link" href="../contacto/index.html" rel="noreferrer">Contacto</a></li>
+        <li><a class="navcart" href="../carrito/" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </div>
   </nav>
   <header id="header">
     <a href="../index.html" class="logo">
-      <img src="/Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+      <img src="../Imagenes/caballo-bronce-c.png" alt="logo del caballo">
     </a>
   </header>
   <main>
-<section class="projects-section">
-<h3>Sobre nosotros</h3>
-<p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius error quaerat, cumque aperiam magnam assumenda neque ratione quod dignissimos!</p>
-<section class="content-section">
-  <div>
-    <a href="../index.html">
-    <img class="logo-footer"src="/imagenes/footer/IMG-6148.png" alt="#">
-  </a>
-  </div>
-  <div class="contact-info">
-  <h2>Productos de alta calidad que llevamos a eventos en toda Venezuela</h2>
-  </div>
-  <div class="info">
-    <ul>
-   <li><a class="footer-info" href="#">Productos</a></li>
-   <li><a class="footer-info" href="../nosotros/index.html">Nosotros</a></li>
-   <li><a class="footer-info" href="../contacto/index.html">Contacto</a></li>
-    </ul>
-  </div>
-  <div class="pagos">
-    <h3>Metodos de pagos</h3>
-    <p>Contra entrega</p>
-    <p>Pago movil</p>
-    <p>Zelle</p>
-    <i class="fa-brands fa-cc-visa"></i>
-    <i class="fa-brands fa-cc-mastercard"></i>
-    <i class="fa-regular fa-handshake"></i>
-  </div>
-</section>
+    <div>
+      <h3 class="us">Sobre nosotros</h3>
+    </div>
+    <div>
+        <section>
+                <img src="https://plustatic.com/2117/conversions/caballo-large.jpg" alt="#">
+                <p class="texto1">En nuestra tienda, nos apasiona ofrecer lo mejor para nuestros amigos equinos. Somos especialistas en proporcionar una amplia gama de productos, desde medicamentos vitales como antibióticos hasta aperos y mantas de calidad.</p>
+        </section>
+
+          <section>
+                <img src="https://a.storyblok.com/f/160385/2678ac0b3b/cronica-colores-caballos-personalidad_2.jpg" alt="#"> 
+                  <p class="texto1">Nuestro compromiso es asegurarnos de que los caballos reciban el cuidado y el equipo adecuados para mantener su salud y bienestar en óptimas condiciones. Con años de experiencia y un profundo amor por estos majestuosos animales, estamos aquí para servir a la comunidad equina con dedicación y compromiso!</p>
+          </section>
+     </div>
+     <div>
+      <div class="whatsapp-btn">
+        <a href="https://wa.me/584145085416" target="_blank">
+          <i class="fa-brands fa-whatsapp" style="color: #119213;"></i>
+        </a>
+      </div>
+      <div class="content-section">
+        <div>
+          <a href="./index.html">
+          <img class="logo-footer"src="../Imagenes/footer/IMG-6148.png" alt="#">
+        </a>
+      </div>
+        <div class="grid">
+        <div class="contact-info">
+        <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
+        <p>Realizamos envios a nivel nacional por ZOOM business</p>
+        </div>
+      </div>
+        <div class="grid">
+        <div class="info">
+          <ul>
+         <li><a class="footer-info" href="../productos/">Productos</a></li>
+         <li><a class="footer-info" href="#">Nosotros</a></li>
+         <li><a class="footer-info" href="../contacto/">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="pagos">
+          <h3>Metodos de pagos</h3>
+          <p class="letter">Contra entrega</p>
+          <p class="letter">Pago movil</p>
+          <p class="letter">Zelle</p>
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-regular fa-handshake"></i>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="pagos">
+          <h3>horarios de atención</h3>
+          <p class="letter">Lunes a Sabados</p>
+          <p class="letter">9 am - 5pm</p>
+        </div>
+      </div>
+    </div>
 <footer id="end">
 <p class="horse">© Para Tu Caballo 2024</p>
 <div class="contact-link">
 
-  <a href="https://www.instagram.com/paratucaballo"  class="btn contact-details">
+  <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
     <i class="fa-brands fa-instagram"></i>
   </a>
 </div>
 </footer>
 </main>
 <script src="../main.js"></script>
+<script src="../csvToJson.js"></script>
 </body>
 </html>

@@ -2,13 +2,16 @@ h2 {
   color: black;
   margin: 25px 0;
 }
-
+.navcart {
+  font-size: 25px;
+}
 .page-container,
 .cart-item,
 .cart-item-button,
 .cart-item-amounts,
 .amounts,
 .order-form,
+.phone-number-container,
 .order-form label {
   display: flex;
 }
@@ -106,18 +109,36 @@ h2 {
   margin: 15px 0;
 }
 
+.phone-number-container {
+  gap: 5px;
+}
+
+.prefix-label {
+  width: 30%;
+}
+
+.number-label {
+  width: 70%;
+}
+
 .order-form label,
 .order-form button {
   margin: 15px 0;
 }
 
 .order-form input,
-.order-form button {
+.order-form button,
+.order-form select {
   height: 40px;
   padding: 12px 20px;
 }
 
-.order-form input {
+.order-form label strong {
+  color:#f55;
+}
+
+.order-form input,
+.order-form select {
   margin-top: 5px;
   border: none;
 }
@@ -146,5 +167,8 @@ h2 {
 
   .order-page {
     width: 40%;
+  }
+  .navcart {
+    font-size: 50px;
   }
 }

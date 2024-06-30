@@ -17,7 +17,7 @@ h4 {
     font-size: 40px;
     padding: 10%;
     text-align: center;
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
 }
 body {
   background-color: transparent;
@@ -32,7 +32,27 @@ body {
   background-attachment: fixed;
   background-position: center; 
 }
+.slidertext {
+  color: #fff;
+}
+@keyframes rollGold {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 200% 0%;
+  }
+}
 
+.slidertext {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: linear-gradient(10deg, gold, white, gold);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rollGold 4s;
+}
 /*CONTACTO*/
 
 .formulario {
@@ -47,7 +67,7 @@ body {
 }
 label {
   color: #222;
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
 }
 .campo label {
   display: block;
@@ -200,10 +220,7 @@ header {
   width: 100%;
 }
 /* nosotros*/
-.about {
-  color: #222;
-  font-size: 40px;
-}
+
 /* Start categoria de productos */
 
 .tarjeta {
@@ -227,21 +244,26 @@ header {
 .tarjeta {
   background-color: #fff;
   box-shadow: 0 0 10px #7f7f7f8f;
-  padding: 15px;
+  padding: 5px;
 }
 .textimg, .titulo {
   color: #222;
   padding: 10px;
   font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+.textimg {
+  font-size: 20px;
 }
 .subtitles {
   color: #222;
-  font-size: 12px;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
 }
-.tarjeta img {
+.tarjeta > img {
   width: 100%;
   height: auto;
-  
 }
 .contenido, .order {
   padding: 10px;
@@ -249,8 +271,21 @@ header {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.contenido, .order:hover {
-  background-color: #5a3900;
+.diseños {
+  color: #222;
+  font-size: 25px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.contenido {
+  background-color: #efb810 ;  
+}
+.contenido:hover {
+  background-color: #f0e68c;;
+}
+.order:hover {
+  background-color: #f0e68c;;
 }
 .price {
   color: #222;
@@ -266,7 +301,7 @@ header {
   margin: 0;
   color: white;
   font-size: 30px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 .video {
@@ -277,41 +312,6 @@ header {
   padding: 20px;
 }
 
-/* Estilos ventana modal */
-.titulo-modal {
-  color: #222;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-}
-.subtitles-modal {
-  color: #222;
-  font-size: 20px;
-  text-align: center;
-  padding: 5px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.price-modal {
-  color: #222;
-  margin-top: 20px;
-  margin-left: 15px;
-  font-size: 30px;
-}
-.modal-order, .price-modal {
-  align-items: center;
-  display: inline-block;
-}
-.modal-order {
-  background-color: #efb810;
-  padding-left: 30px;
-  padding-right: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 50px;
-  font-size: 20px;
-}
-
 /* Start section footer */
 
 .logo-footer {
@@ -319,9 +319,13 @@ header {
     margin-left: 100px;
     position: relative;
 }
+.contact-info {
+  text-align: center;
+  padding-bottom: 50px;
+  padding: 30px;
+}
 .content-section{
  background-color: #222;
- 
 }
 .contact-link {
   font-size: 2.4rem;
@@ -341,7 +345,7 @@ header {
   font-size: 15px;
   justify-content: center;
   text-align: center;
-  font-family:didot;
+  font-family: 'Arial', sans-serif;
   line-height: 2.5;
 }
 .pagos > i {
@@ -351,8 +355,8 @@ header {
 #contactnav {
     text-align: center;
 }
-h2 {
-  font-family: didot;
+.words {
+  font-family: 'Arial', sans-serif;
   text-align: center;
   color: white;
 }
@@ -364,15 +368,15 @@ h2 {
 .footer-info, li {
   color: white;
   font-size: 15px;
-  font-family: didot;  
+  font-family: 'Arial', sans-serif;  
   text-align: center;
   justify-content: center;
   margin-bottom: 20px;
   
 }
-.contact-info > h2 {
+.contact-info > .words {
   font-size: 15px;
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   margin-left: 50px;
   margin-right: 50px;
   font-weight: 200;
@@ -384,13 +388,15 @@ footer {
   align-items: center;
 }
 #end{
+  display: flex;
+  flex-direction: row;
   background-color: #efb810;
 
 }
 .horse {
-  font-family: didot;
+  font-family: 'Arial', sans-serif;
   color: #222;
-  font-size: 20px;
+  font-size: 15px;
   margin-inline-end: auto;
   margin-left: 20px;
 }
@@ -399,7 +405,7 @@ footer {
 
 
 h1 {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Arial', sans-serif;
   text-align: center;
   font-size: 50px;
   color: #10102E;
@@ -474,55 +480,54 @@ footer, section {
   font-family: didot;
 }
 
-/* Estilos de la ventana modal */
-
-.modal-backdrop, .modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-backdrop {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+.whatsapp-btn {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  transition: opacity 0.5s;
+  bottom: 20px;
+  right: 20px;
+  animation: vibrate 2s;
+}
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.modal-hidden {
-  display: none;
+.whatsapp-btn {
+  width: 50px;
+  height: 130px;
+  border-radius: 50%;
+  font-size: 60px;
 }
-
-.modal-transitioning {
-  opacity: 0;
+/* politicas */
+.politic {
+  margin: 40px;
+  color: #222;
+  align-items: center;
+  text-align: center;
 }
-
-.modal {
-  flex-direction: column;
-  background-color: #E1E8BB;
-  width: 80%;
-  max-width: 750px;
-  height: 70%;
+.politic > p::first-letter {
+  font-size: 2em;
+  color: rgb(218, 169, 35);
 }
-
-.modal img {
-  display: block;
-  width: 90%;
-}
-
-/* Fin de los estilos de la ventana modal */
-
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   h1 {
     padding: 35px 0;
   }
   h1 {
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     font-size: 50px;
     border-bottom: 5px solid #E7DD11;
@@ -615,39 +620,88 @@ footer, section {
   .carr-pos-3 {
     transform: translateX(calc(-100% * 2 / 3));
   }
-   /* Categoria de productos*/
+   /* Categoria de productos */
    .tarjeta {
+    position: relative;
     width: 250px;
-    height: auto;
+    height: 450px;   
     overflow: hidden;
-    margin: 40px ;
+    margin: 40px;
     display: inline-block;
+    text-align: center;
   }
   .tarjeta img {
     width: 100%;
-    height: auto;
+    height: auto; 
   }
   .content-grid {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
     justify-content: center;
     text-align: center;
-    margin: 0 auto; 
+    margin: 0px auto; 
   }
-  .contenido {
-    padding: 10px;
-    background-color: #efb810;
-  }
-  .project-title, .project-description {
+  .project-title {
     margin: 0;
     color: white;
     font-size: 20px;
   }
-  .textimg {
-    color: #222;
-    font-size: 12px;
+  .contenido {
+    position: relative;
+    height: 100%;   
   }
+  .textimg, .titulo {
+    padding: 0px;
+    font-size: 20px;
+  }
+  .subtitles {  
+    font-size: 15px;  
+    margin-top: 10px;
+  }
+  .order{
+    position: absolute;
+    bottom: 10px;
+    left: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-top: auto; 
+ }
+ .price {
+  position: absolute;
+  bottom: 10px;
+  right: 120px;
+  width:  100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .contenido.ingresar, .pro {
+    background-color: white;
+    padding: 0px; 
+ }
+ .project-title .more {
+  padding: 20px;
+  margin-top: 10px;
+ }
+ .pro {
+    width: 300px;
+    height: 450px;   
+    overflow: hidden;
+    margin: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+ }
+ .contenido.ingresar {
+  background-color: #d9a200;
+ }
+.contenido:hover {
+  background-color: #f0e68c;
+}
+/*end categoria*/
   .content-logo {
     display: flex;
     flex-wrap: wrap;
@@ -656,7 +710,7 @@ footer, section {
     margin: 0 auto; 
   }
   .logos1 {
-    width: 250px;
+    width: 165px;
     height: auto;
     overflow: hidden;
     margin: 40px ;
@@ -676,35 +730,41 @@ footer, section {
   /*footer*/
   .logo-footer {
     width: 300px;
-    margin-left: 100px;
-    position: relative;
+    margin: 0;
+  }
+  .contact-info {
+    text-align: center;
+  }
+  p:first-child {
+    margin-bottom: 10px;
   }
   .content-section{
-    position: relative;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
   }
+  .footer-info {
+    text-align:end;
+    margin-left: 130px;
+  }
+ .grid {
+  align-self: start;
+  margin-top: 100px;
+ }
+  .info {
+    text-align: center;
+  }
   .contact-link {
-  font-size: 3rem;
-  flex-direction: row;
-  justify-content: flex-end;
   margin-right: 100px;
   }
   .horse {
-    font-family: didot;
+    font-family: 'Arial', sans-serif;
     color: #222;
     font-size: 20px;
     margin-inline-end: auto;
     margin-left: 80px;
   }
-  .contact-info > h2 {
-    margin-bottom: 10px;
-    margin-left: 50px;
-  }
-  .info {
-    margin-left: 70px;
-  }
+ 
   /*CONTACTO*/
   .contenedor1 {
     display: flex;
@@ -717,11 +777,9 @@ footer, section {
     background-attachment: fixed;
     background-position: center; 
   }
-  
   .form1 {
     flex: 1;
   }
-  
   .mapa, .formulario {
     margin-top: 0px; 
     margin-bottom: 30px;
@@ -730,59 +788,27 @@ footer, section {
     width: 500px;
   }
   .mapa {
-   margin-top: 70px;
-   height: 100px;
-
+   margin-top: 0px;
+   width: 800px;
   }  
-  .titulo-modal {
-    color: #222;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 130%;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .subtitles-modal {
-    color: #222;
-    font-size: 15px;
-    text-align: center;
-    padding: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .price-modal {
-    color: #222;
-    font-size: 30px;
-    margin-left: 50px;
-  }
-  .modal-order {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 5px;
-    margin-left: 120px;
-    font-size: 20px;
-  }
-  .modal {
-    flex-direction: column;
-    background-color: white;
-    max-width: 450px;
-    height: 95%;
-  }
-  
-  .modal img {
-    width: 75%;
-    margin-top: 20px;
-  }
   .whatsapp-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
   }
-  
-  .whatsapp-btn img {
-    width: 50px;
-    height: 50px;
+  .whatsapp-btn {
+    width: 60px;
+    height: 150px;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 99;
+    font-size: 70px;
   }
+  /* politicas */
+.politic {
+  margin: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.const {
+  margin: 20px;
+}
 }
