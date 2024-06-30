@@ -146,7 +146,7 @@ const generateCart = (refresh = false) => {
 document.addEventListener('DOMContentLoaded', generateCart);
 
 const postSubmission = async (submissionParams) => {
-  return await fetch('http://localhost:3000/api/v1/projects/3/submissions/', {
+  return await fetch('http://formailer-api-production.up.railway.app/api/v1/projects/6/submissions/', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
