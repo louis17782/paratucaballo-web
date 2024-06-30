@@ -166,7 +166,7 @@ const convertCartToOrder = () => {
 
   const total = document.getElementById('total').innerText;
 
-  order.push(`TOTAL: ${total}`);
+  order.push(total.toUpperCase());
   
   return order
 }
