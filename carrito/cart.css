@@ -147,7 +147,9 @@ h2 {
   font-weight: 700;
   color: black
 }
-
+em {
+  color: red;
+}
 @media only screen and (width > 1024px) {
   .page-container {
     flex-direction: row;
