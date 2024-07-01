@@ -41,41 +41,44 @@
     </a>
   </header>
   <main>
-<section class="section-diseños">
-  <h1>Nuestros diseños</h1>
-       <div class="gallery">
-        <p class="diseños"><em>Mejora el PERFORMANCE de tu caballo con nuestros productos de Alta Gama!</em></p>
-      <p class="diseños"><em>Creadores de los petos artísticos</em></p>
-      <p class="diseños">🥇</p>
-        <div class="main-image">
-          <img id="mainImg" src="../Imagenes/SETS/set1.JPG" alt="#">
-      </div>
-       <div class="thumbnails">
-          <img id="imgnail" src="../Imagenes/SETS/set1.JPG" alt="set1" onclick="displayImage('/Imagenes/SETS/set1.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set2.JPG" alt="set2" onclick="displayImage('/Imagenes/SETS/set2.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set3.JPG" alt="set3" onclick="displayImage('/Imagenes/SETS/set3.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set4.JPG" alt="set4" onclick="displayImage('/Imagenes/SETS/set4.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set5.JPG" alt="set5" onclick="displayImage('/Imagenes/SETS/set5.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set7.JPG" alt="set7" onclick="displayImage('/Imagenes/SETS/set7.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set8.JPG" alt="set8" onclick="displayImage('/Imagenes/SETS/set8.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set9.JPG" alt="set9" onclick="displayImage('/Imagenes/SETS/set9.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set10.JPG" alt="set10" onclick="displayImage('/Imagenes/SETS/set10.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set11.JPG" alt="set11" onclick="displayImage('/Imagenes/SETS/set11.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set12.JPG" alt="set12" onclick="displayImage('/Imagenes/SETS/set12.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set13.JPG" alt="set13" onclick="displayImage('/Imagenes/SETS/set13.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set14.JPG" alt="set14" onclick="displayImage('/Imagenes/SETS/set14.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set15.JPG" alt="set15" onclick="displayImage('/Imagenes/SETS/set15.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set16.JPG" alt="set16" onclick="displayImage('/Imagenes/SETS/set16.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set17.JPG" alt="set17" onclick="displayImage('/Imagenes/SETS/set17.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set18.JPG" alt="set18" onclick="displayImage('/Imagenes/SETS/set18.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set19.JPG" alt="set19" onclick="displayImage('/Imagenes/SETS/set19.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set20.JPG" alt="set20" onclick="displayImage('/Imagenes/SETS/set20.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set21.JPG" alt="set21" onclick="displayImage('/Imagenes/SETS/set21.JPG')">
-          <img id="imgnail" src="../Imagenes/SETS/set22.JPG" alt="set22" onclick="displayImage('/Imagenes/SETS/set22.JPG')">
-          
+    <section class="categories">
+      <button type="button" title="Go left" onclick="moveCarouselLeft()" class="arrow-left">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button type="button" title="Go right" onclick="moveCarouselRight()" class="arrow-right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="carousel">
+        <div id="carousel" class="carousel-frame carr-pos-1">
+          <div class="carousel-element">
+            <img src="../Imagenes/SETS/set1.JPG" alt="1">
+          </div>
+          <div class="carousel-element">
+            <img src="../Imagenes/SETS/set2.JPG" alt="2">     
+          </div>
+          <div class="carousel-element">
+            <img src="../Imagenes/SETS/set3.JPG" alt="3">    
+          </div>
+          <div class="carousel-element">
+            <img src="../Imagenes/SETS/set4.JPG" alt="4">    
+          </div>
+          <div class="carousel-element">
+            <img src="../Imagenes/SETS/set5.JPG" alt="5">
+          </div>
+          <div class="carousel-element">
+            <img src="../Imagenes/SETS/set7.JPG" alt="6">
+          </div>
         </div>
-       </div>
-</section>
+      </div>
+      <div class="dotsContainer">
+           <div class="dot active" attr="0"></div>
+           <div class="dot" attr="1"></div>
+           <div class="dot" attr="2"></div>
+           <div class="dot" attr="3"></div>
+           <div class="dot" attr="4"></div>
+           <div class="dot" attr="5"></div>  
+      </div>
+  </section>
 <div class="whatsapp-btn">
   <a href="https://wa.me/584145085416" target="_blank">
     <i class="fa-brands fa-whatsapp" style="color: #119213;"></i>

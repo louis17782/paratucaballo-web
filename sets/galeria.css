@@ -1,47 +1,186 @@
-.gallery {
-    align-items: center;
-    margin: 30px;
+.categories {
+  position: relative;
+  background-image: url("../Imagenes/fondo\ petos.png");
+}
+
+.carousel {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 25px;
+  height: 100%;
+  z-index: 99;
+}
+
+.arrow-left {
+  left: 2%;
+  color: rgb(184, 152, 12);
+}
+
+.arrow-right {
+  right: 2%;
+  color: rgb(184, 152, 12);
+}
+
+.carousel-frame {
+  display: flex;
+  width: 600%;
+}
+
+.carousel-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: calc(100% / 6);
+  min-height: 500px;
+  padding: 0px 2%;
+  scroll-snap-align: start;
+}
+
+.carousel-element img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.carr-pos-1 {
+  transform: translateX(0);
+}
+
+.carr-pos-2 {
+  transform: translateX(calc(-100% / 6));
+}
+.carr-pos-3 {
+  transform: translateX(calc(-100% * 2 / 6));
+}
+.carr-pos-4 {
+  transform: translateX(calc(-100% * 3 / 6));
+}
+.carr-pos-5 {
+  transform: translateX(calc(-100% * 4 / 6));
+}
+.carr-pos-6 {
+  transform: translateX(calc(-100% * 5 / 6));
+}
+.dotsContainer {
+  position: absolute;
+  bottom: 5px;
+  z-index: 3;
+  left: 50%;
+  transform: translate(-50%);
+}
+.dotsContainer .dot {
+  width: 10px;
+  height: 10px;
+  margin: 30px 2px;
+  border: 3px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotsContainer .active {
+  background-color: rgb(184, 152, 12);
+}
+@media only screen and (width >= 1024px) {
+  .carousel {
+    overflow: hidden;
   }
-  #imgnail, #mainImg {
-    max-width: 100%;
-    max-height: 400px;
-    box-shadow: 0 10px 10px #7f7f7f8f;
-    padding: 20px;
-    padding-top: 40px;
+  .arrow-left, .arrow-right {
+    padding: 15px;
+    font-size: 55px;
+    height: 100%;
+    z-index: 4;
+    cursor: pointer;
   }
-  .mainImg {
-    display: none;
+  
+  .arrow-left {
+    left: 5%;
+    color: rgb(184, 152, 12);
+    margin-top: 280px;
+    width: 50px;
+    height: 100px;
   }
-  @media only screen and (width >= 1024px) {
-  .gallery {
+  
+  .arrow-right {
+    right: 5%;
+    color: rgb(184, 152, 12);
+    margin-top: 280px;
+    width: 50px;
+    height: 100px;
+  }
+  .arrow-right:hover {
+    background-color: rgb(224, 228, 174);
+    opacity: 0.5;
+    color: white;
+    transition: 0.7s;
+  }
+  .arrow-left:hover {
+    background-color: rgb(224, 228, 174);
+    opacity: 0.5;
+    color: white;
+    transition: 0.7s;
+  }
+  .carousel-frame {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('/Imagenes/fondo\ petos.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center; 
+    width: 650%;
   }
-  .main-image {
-    margin-bottom: 20px;
-  }
-  #mainImg {
-    width: 500px;
-    height: auto;
-  }
-  #main-image {
-    max-width: 200px;
-    max-height: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    padding: 5px;
-  }
-  .thumbnails {
+  
+  .carousel-element {
     display: flex;
+    padding: 0px 2%;
+    margin-right: 100px;
+  }
+  .carousel-element img {
+    display: block;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
   }
-  .thumbnails img {
-    width: 150px; 
+  .carr-pos-1 {
+    transform: translateX(0);
+  }
+  
+  .carr-pos-2 {
+    transform: translateX(calc(-100% / 6));
+  }
+  .carr-pos-3 {
+    transform: translateX(calc(-100% * 2 / 6));
+  }
+  .carr-pos-4 {
+    transform: translateX(calc(-100% * 3 / 6));
+  }
+  .carr-pos-5 {
+    transform: translateX(calc(-100% * 4 / 6));
+  }
+  .carr-pos-6 {
+    transform: translateX(calc(-100% * 5 / 6));
+  }
+  .dotsContainer {
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .dotsContainer .dot {
+    width: 25px;
+    height: 25px;
+    margin: 30px 2px;
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dotsContainer .active {
+    background-color: rgb(184, 152, 12);
   }
 }
