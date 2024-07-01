@@ -31,9 +31,9 @@ const csvToJson = async () => {
 
     // Como evitamos usar las comas para no interferir con el formato CSV utilizamos la expresión `&com;` que luego debemos intercambiar por "," utilizando el método `replace` y una regex sencilla.
     if (obj.descripcion) obj.descripcion = obj.descripcion.replace(/&com;/g, ',');
-
+    
     // También hacemos una pequeña validación antes de incluir el objeto en el arreglo `result`, asegurándonos que cada objeto posee los atributos `CÓDIGO` y `pronto pago`.
-    if (obj['CÓDIGO'] && obj['pronto pago']) result.push(obj);
+    if (obj['CÓDIGO'] && obj['pronto pago'] && Number(obj['EXISTENCIA ACTUAL'])) result.push(obj);
   }
 
   // Finalmente returnamos el objeto results, que para este punto, es un arreglo con los objetos sacados de la información del servidor.
