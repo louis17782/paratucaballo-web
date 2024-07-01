@@ -31,9 +31,9 @@ const csvToJson = async () => {
 
     // Como evitamos usar las comas para no interferir con el formato CSV utilizamos la expresión `&com;` que luego debemos intercambiar por "," utilizando el método `replace` y una regex sencilla.
     if (obj.descripcion) obj.descripcion = obj.descripcion.replace(/&com;/g, ',');
-
+    
     // También hacemos una pequeña validación antes de incluir el objeto en el arreglo `result`, asegurándonos que cada objeto posee los atributos `CÓDIGO` y `pronto pago`.
-    if (obj['CÓDIGO'] && obj['pronto pago']) result.push(obj);
+    if (obj['CÓDIGO'] && obj['pronto pago'] && Number(obj['EXISTENCIA ACTUAL'])) result.push(obj);
   }
 
   // Finalmente returnamos el objeto results, que para este punto, es un arreglo con los objetos sacados de la información del servidor.
@@ -47,7 +47,7 @@ function checkCart(product) {
   return cart.some((cartProduct) => cartProduct['CÓDIGO'] === product['CÓDIGO'])
 };
 
-// Esta función, aunque un poco verbosa, genera el HTML para una tarjeta de producto.
+
 function generateCardHTML(product) {
   const anchor = document.createElement('a');
   anchor.classList.add('project-title');
@@ -122,8 +122,3 @@ function renderCards(category) {
     console.log(filteredProducts);
   });
 };
-
-
-// PS: Luis, si lees esto, no te abrumes! Yo sé que son bastantes cosas nuevas y todo, pero dale chance a que lleges al módulo de JavaScript.
-// Yo estoy seguro que luego de ese módulo vas a volver a leer esto y vas a entender todo clarito. 👍
-// De igual forma, por aquí ando yo para que me preguntes vainas. No te de pena preguntarme y pedirme reuniones para explicar. 😅
