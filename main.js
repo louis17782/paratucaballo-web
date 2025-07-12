@@ -63,3 +63,25 @@ function hideModal() {
 
   setTimeout(() => modal.classList.replace('modal-transitioning', 'modal-hidden'), 500);
 }
+
+/*MODAL*/
+document.querySelectorAll('.tarjeta img').forEach(img => {
+  img.addEventListener('click', function() {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+  });
+});
+
+document.querySelector('.close').onclick = function() {
+  document.getElementById('imageModal').style.display = 'none';
+};
+
+window.onclick = function(event) {
+  const modal = document.getElementById('imageModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
