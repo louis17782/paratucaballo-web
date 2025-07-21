@@ -85,3 +85,32 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 };
+
+//ver mas 
+
+// ...existing code...
+
+// Mostrar solo 4 tarjetas .pro-1 al inicio y mostrar 4 más cada vez que se haga clic en "Ver más"
+document.addEventListener('DOMContentLoaded', function() {
+  const tarjetas = document.querySelectorAll('.tarjeta.pro-1');
+  const verMasBtn = document.getElementById('verMasBtn');
+  let visibles = 4;
+
+  function mostrarTarjetas() {
+    tarjetas.forEach((tarjeta, i) => {
+      tarjeta.style.display = i < visibles ? 'block' : 'none';
+    });
+    if (visibles >= tarjetas.length) {
+      verMasBtn.style.display = 'none';
+    } else {
+      verMasBtn.style.display = 'block';
+    }
+  }
+
+  mostrarTarjetas();
+
+  verMasBtn.addEventListener('click', function() {
+    visibles += 4;
+    mostrarTarjetas();
+  });
+});
