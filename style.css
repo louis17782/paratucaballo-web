@@ -592,21 +592,6 @@ footer, section {
   background: #a67c2d;
 }
 
-.content-peto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.content-peto img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #7f7f7f8f;
-}
-
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   h1 {
