@@ -576,7 +576,6 @@ footer, section {
 }
 
 /* ver mas */
-/* ...existing code... */
 .ver-mas-btn {
   display: block;
   margin: 20px auto;
@@ -592,7 +591,21 @@ footer, section {
 .ver-mas-btn:hover {
   background: #a67c2d;
 }
-/* ...existing code... */
+
+.content-peto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.content-peto img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #7f7f7f8f;
+}
 
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
