@@ -413,8 +413,7 @@ h1 {
   border-bottom: 5px solid #E7DD11;
   width: 300px; 
   margin: auto;
-  padding-bottom: 40px; 
-  margin-bottom: 10px;
+  padding-top: 40px;
 }
 
 footer, section {
@@ -524,12 +523,19 @@ footer, section {
 }
 
 /* Primary section styles */
-.content-text {
+  .content-text {
     color: #222;
     font-size: 20px;
     padding: 30px;
     font-family: 'Arial', sans-serif;
     text-align: center;
+  }
+
+  .block-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .block-content > p::first-letter {
@@ -538,10 +544,8 @@ footer, section {
   }
  
   .block-content > img {
-    width: 90%;
-    height: auto;
-    margin: 20px;
-    padding: 0px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 20px;
     box-shadow: 0 0 10px #7f7f7f8f;
   }
@@ -591,6 +595,13 @@ footer, section {
 .ver-mas-btn:hover {
   background: #a67c2d;
 }
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
@@ -705,13 +716,7 @@ footer, section {
     width: 100%;
     height: auto; 
   }
-  .content-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin: 0px auto; 
-  }
+  
   .project-title {
     margin: 0;
     color: white;
@@ -908,7 +913,7 @@ footer, section {
   }
 
   .block-content > img {
-    width: 400px;
+    width:400px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px #7f7f7f8f;
