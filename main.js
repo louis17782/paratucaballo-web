@@ -114,3 +114,39 @@ document.addEventListener('DOMContentLoaded', function() {
     mostrarTarjetas();
   });
 });
+
+// ...existing code...
+// ...existing code...
+
+/* SNOW: crea copos y los anima */
+function startSnow(count = 35) {
+  const fragment = document.createDocumentFragment();
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement('div');
+    el.className = 'snowflake';
+    // propiedades aleatorias
+    const size = Math.round(Math.random() * 14) + 6; // 6 - 20px
+    const left = Math.random() * 100; // %
+    const duration = (Math.random() * 10 + 6).toFixed(2) + 's'; // 6s - 16s
+    const opacity = (Math.random() * 0.6 + 0.4).toFixed(2); // 0.4 - 1
+    const sway = Math.round(Math.random() * 60 + 10) + 'px'; // 10 - 70px
+
+    el.style.setProperty('--size', `${size}px`);
+    el.style.setProperty('--left', `${left}%`);
+    el.style.setProperty('--duration', duration);
+    el.style.setProperty('--opacity', opacity);
+    el.style.setProperty('--sway', sway);
+
+    fragment.appendChild(el);
+  }
+  document.body.appendChild(fragment);
+}
+
+// iniciar la nieve cuando el DOM esté listo (ajusta el número si quieres más/menos)
+document.addEventListener('DOMContentLoaded', () => {
+  // opcional: sólo en index (cuando la ruta termina en '/' o 'index.html')
+  const p = window.location.pathname;
+  if (p === '/' || p.endsWith('index.html') || p === '') {
+    startSnow(36);
+  }
+});
