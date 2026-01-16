@@ -154,7 +154,7 @@ nav {
 
 .navlinks-container {
   position: absolute;
-  background-image: url("./Imagenes/navidad4.png");
+  background-color: white;
   background-size: contain;
   font-size: 2rem;
   width: 90%;
@@ -206,7 +206,7 @@ header {
   align-items: center;
   width: 100%;
   height: 300px;
-  background-image: url('/Imagenes/navidad5.png');
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -605,41 +605,6 @@ footer, section {
     align-items: center;
   }
 
-/* SNOW */
-.snowflake {
-  position: fixed;
-  top: -10vh;
-  z-index: 99999;
-  pointer-events: none;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.95);
-  mix-blend-mode: screen;
-  will-change: top, transform;
-  animation: fall var(--duration, 10s) linear infinite,
-             sway calc(var(--duration,10s) / 2) ease-in-out infinite alternate;
-  left: var(--left, 50%);
-  width: var(--size, 10px);
-  height: var(--size, 10px);
-  opacity: var(--opacity, 0.9);
-}
-
-/* animación que baja las partículas */
-@keyframes fall {
-  0%   { top: -10vh; }
-  100% { top: 110vh;  }
-}
-
-/* pequeño vaivén horizontal y rotación */
-@keyframes sway {
-  0%   { transform: translateX(0) rotate(0deg); }
-  100% { transform: translateX(var(--sway, 30px)) rotate(360deg); }
-}
-
-/* menos nieve y tamaño en pantallas pequeñas */
-@media (max-width: 600px) {
-  .snowflake { width: calc(var(--size,10px) * 0.7); height: calc(var(--size,10px) * 0.7); }
-}
-
 /* Start of media queries */
 @media only screen and (width >= 1024px) {
   h1 {
@@ -658,7 +623,7 @@ footer, section {
 
   nav, .backdrop-transitioning {
     justify-content: flex-end;
-    background-image: url("./Imagenes/navidad3.png");
+    background-color: white;
     background-size: cover;
     backdrop-filter: none;
     width: 100%;
