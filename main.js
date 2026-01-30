@@ -114,3 +114,88 @@ document.addEventListener('DOMContentLoaded', function() {
     mostrarTarjetas();
   });
 });
+
+// carousel petos
+document.querySelectorAll('.carousel-content').forEach(carousel => {
+  const container = carousel.querySelector('.carousel-petos');
+  const track = carousel.querySelector('.carousel-track');
+  const dots = carousel.querySelectorAll('.dot');
+  const leftArrow = carousel.querySelector('.arrow.left');
+  const rightArrow = carousel.querySelector('.arrow.right');
+
+  const images = track.children;
+  const totalImages = images.length;
+  const maxDots = dots.length;
+
+  const imagesPerPage = 3;
+
+  let currentIndex = 0; 
+  let pageIndex = 0;   
+
+  container.addEventListener('scroll', () => {
+    if (window.innerWidth >= 1024) return;
+
+    const imageWidth = container.clientWidth;
+    currentIndex = Math.round(container.scrollLeft / imageWidth);
+    updateDots(currentIndex);
+  });
+
+  function updateDesktopCarousel() {
+    const gap = parseInt(getComputedStyle(track).gap) || 0;
+    const imageWidth = images[0].clientWidth + gap;
+
+    const moveX = pageIndex * imageWidth * imagesPerPage;
+    track.style.transform = `translateX(-${moveX}px)`;
+
+    updateArrows();
+  }
+
+  const totalPages = Math.ceil(totalImages / imagesPerPage);
+
+  rightArrow?.addEventListener('click', () => {
+    if (window.innerWidth < 1024) return;
+
+    if (pageIndex < totalPages - 1) {
+      pageIndex++;
+      updateDesktopCarousel();
+    }
+  });
+
+  leftArrow?.addEventListener('click', () => {
+    if (window.innerWidth < 1024) return;
+
+    if (pageIndex > 0) {
+      pageIndex--;
+      updateDesktopCarousel();
+    }
+  });
+
+  function updateDots(index) {
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index % maxDots]?.classList.add('active');
+  }
+
+  function updateArrows() {
+    if (!leftArrow || !rightArrow) return;
+
+    leftArrow.style.opacity = pageIndex === 0 ? '0.3' : '1';
+    leftArrow.style.pointerEvents = pageIndex === 0 ? 'none' : 'auto';
+
+    rightArrow.style.opacity = pageIndex === totalPages - 1 ? '0.3' : '1';
+    rightArrow.style.pointerEvents = pageIndex === totalPages - 1 ? 'none' : 'auto';
+  }
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024) {
+      pageIndex = 0;
+      track.style.transform = 'translateX(0)';
+      updateArrows();
+    } else {
+      container.scrollLeft = 0;
+      currentIndex = 0;
+      updateDots(0);
+    }
+  });
+
+  // Init
+  updateArrows();
+});
