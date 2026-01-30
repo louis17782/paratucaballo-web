@@ -236,6 +236,7 @@ header {
   margin: 40px ;
   display: inline-block;
 }
+
 .logos1 {
   width: 200px;
   height: auto;
@@ -243,30 +244,36 @@ header {
   margin: 40px ;
   display: inline-block;
 }
+
 .logos1 img {
   width: 100%;
   height: auto;
 }
+
 .tarjeta {
   background-color: #fff;
   box-shadow: 0 0 10px #7f7f7f8f;
   padding: 5px;
 }
+
 .textimg, .titulo {
   color: #222;
   padding: 10px;
   font-weight: bold;
   font-family: 'Arial', sans-serif;
 }
+
 .textimg {
   font-size: 20px;
 }
+
 .subtitles {
   color: #222;
   font-size: 20px;
   font-family: 'Arial', sans-serif;
   padding: 10px;
 }
+
 .tarjeta > img {
   width: 100%;
   height: auto;
@@ -320,15 +327,10 @@ header {
 }
 
 /* Start section footer */
-
 .logo-footer {
   width: 200px;
 }
-/* .contact-info {
-  text-align: center;
-  padding-bottom: 50px;
-  padding: 30px;
-} */
+
 .content-section{
  background-color: #222;
  display: flex;
@@ -362,16 +364,8 @@ header {
 .contact-details {
   margin-left: 30px;
 }
-/* .pagos {
-  font-size: 15px;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  line-height: 2.5;
-} */
 .grid > i {
   font-size: 30px;
-  /* margin-left: 10px; */
 }
 #contactnav {
     text-align: center;
@@ -381,11 +375,6 @@ header {
   text-align: center;
   color: white;
 }
-/* .info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .footer-info, li {
   color: white;
   font-size: 15px;
@@ -961,17 +950,12 @@ footer, section {
     width: 70%;
     padding: 20px;
   }
-  /*footer*/
-  /* .logo-footer {
-    width: 300px;
-  } */
   .contact-info {
     text-align: center;
   }
   p:first-child {
     margin-bottom: 10px;
   }
-
   .content-section{
     flex-direction: row;
     justify-content: space-around;
@@ -986,21 +970,6 @@ footer, section {
   .develop-content {
     display: none;
   }
-
-  /* .footer-info > li{
-    padding: 10px 0;
-  } */
-
-  /* .content-section{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    padding: 50px 0;
-  } */
- /* .grid {
-    align-self: start;
-    margin-top: 100px;
-  } */
   .info {
     text-align: center;
   }
