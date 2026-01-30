@@ -1,497 +1,500 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Descubre una amplia selección de productos de alta calidad para el cuidado de tu caballo en Para Tu Caballo. Desde suplementos y medicamentos hasta productos para el cuidado de los cascos y más. ¡Visita nuestra tienda en línea hoy mismo!">
-  <title>Productos para el cuidado equino | Tienda Online - Para Tu Caballo</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./carrito/cart.css">
-  <link rel="icon" type="image/png" sizes="64x64" href="/Imagenes/favicon.png">
-  <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
-</head>
-<img src="./Imagenes/parallax1.jpg" alt="cueros" class="parallax">
-<body>
-  <button type="button" class="menu-toggle" onclick="showMenu()">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-  <nav id="navbar" class="hidden">
-    <div id="navlinks" class="navlinks-container hidden">
-        <a class="nav-logo" href="./index.html">
-          <img src="./Imagenes/caballo-bronce-c.png" alt="logo del caballo">
-        </a>
-      <button
-        type="button"
-        title="Show Menu"
-        onclick="hideMenu()"
-        class="menu-close">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <ul class="navlinks">
-        <li><a class="nav-link" href="./index.html" rel="noreferrer">Inicio</a></li>
-        <li><a class="nav-link" href="./productos/index.html" rel="noreferrer">Productos</a></li>
-        <li><a class="nav-link" href="./nosotros/index.html" rel="noreferrer">Nosotros</a></li>
-        <li><a class="nav-link" href="./contacto/index.html" rel="noreferrer">Contacto</a></li>
-        <li><a class="navcart" href="./carrito/" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
-      </ul>
-    </div>
-  </nav>
-  <header id="header">
-    <a href="./index.html" class="logo">
-      <img src="./Imagenes/caballo-bronce-c.png" alt="logo del caballo">
-    </a>
-  </header>
-  <main>
-    <section class="categories">
-      <button type="button" title="Go left" onclick="moveCarouselLeft()" class="arrow-left">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-      <button type="button" title="Go right" onclick="moveCarouselRight()" class="arrow-right">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-      <div class="carousel">
-        <div id="carousel" class="carousel-frame carr-pos-1">
-          <div class="carousel-element">
-            <img src="./Imagenes/craneo1.png" alt="#">
-            <div class="carousel-element-info">
-              <a href="./cuidado-articular-muscular/">
-              <h2 class="words">Arte, originalidad y calidad, tres palabras que definen a PARA TU CABALLO </h2>
-              <p class="slidertext"><strong><em>"Lo que usan los campeones"</em></strong></p>
-            </a>
-            </div>
-          </div>
-          <div class="carousel-element">
-            <img src="./Imagenes/caballo1.png" alt="#">
-            <div class="carousel-element-info">
-              <a href="./suplementos-orales/">
-              <h2 class="words">Contamos con todos los medicamentos y aperos necesarias para mejorar el PERFORMANCE de tu caballo</h2>
-              <p class="slidertext"><strong><em>"Lo que usan los campeones"</em></strong></p>
-            </a>
-            </div>
-          </div>
-          <div class="carousel-element">
-            <div class="carousel-element-info">
-              <a href="./cuidado-de-cascos/">
-              <h2 class="words">Nos encargamos de la salud de tu caballo, y por eso te ofrecemos los mejores productos para su recuperación, medicina con efecto analgésico, antiséptico y antiinflamatorio</h2>
-              <p class="slidertext"><strong><em>"Lo que usan los campeones"</em></strong></p>
-            </a>
-            </div>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre una amplia selección de productos de alta calidad para el cuidado de tu caballo en Para Tu Caballo. Desde suplementos y medicamentos hasta productos para el cuidado de los cascos y más. ¡Visita nuestra tienda en línea hoy mismo!">
+    <title>Productos para el cuidado equino | Tienda Online - Para Tu Caballo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./carrito/cart.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="/Imagenes/favicon.png">
+    <script src="https://kit.fontawesome.com/f8b4998ade.js" crossorigin="anonymous"></script>
+  </head>
+  <img src="./Imagenes/parallax1.jpg" alt="cueros" class="parallax">
+  <body>
+    <button type="button" class="menu-toggle" onclick="showMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav id="navbar" class="hidden">
+      <div id="navlinks" class="navlinks-container hidden">
+          <a class="nav-logo" href="./index.html">
+            <img src="./Imagenes/caballo-bronce-c.png" alt="logo del caballo">
+          </a>
+        <button
+          type="button"
+          title="Show Menu"
+          onclick="hideMenu()"
+          class="menu-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="navlinks">
+          <li><a class="nav-link" href="./index.html" rel="noreferrer">Inicio</a></li>
+          <li><a class="nav-link" href="./productos/index.html" rel="noreferrer">Productos</a></li>
+          <li><a class="nav-link" href="./nosotros/index.html" rel="noreferrer">Nosotros</a></li>
+          <li><a class="nav-link" href="./contacto/index.html" rel="noreferrer">Contacto</a></li>
+          <li><a class="navcart" href="./carrito/" title="Carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
       </div>
-    </section>
-  <section class="projects-section">
-  <h1>Talabartería</h1>
-  <div class="block-content">
-    <p class="content-text">Somos talabarteria, 
-      una empresa manufacturera donde trabajamos y fabricamos artículos de cuero, desde objetos utilitarios hasta elementos para el deporte western y coleo. 
-      Nuestra mano de obra tiene 35 años de experiencia en el mercado nacional.
-      Contamos con una virtud muy especial que somos caballistas y entendemos las necesidades del cliente.<br><br>Estamos
-      comprometidos con la elaboración artesanal de artículos en cuero que combinan tradición, calidad y estilo.
-      Cada pieza es cuidadosamente diseñada para cumplir con los más altos estándares,
-      tanto en funcionalidad como en estética.</p>
-    <img src="./Imagenes/talabarteria/image11.PNG" alt="img">
-  </div>
-  <div class="content-grid">      
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image1.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image3.PNG" alt="#"> 
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image4.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image5.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image5-a.jpg" alt="#"> 
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image6-b.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image7-c.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image8-d.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image9-e.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image10-f.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image11-g.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image12-h.PNG" alt="#">
-    </div>
-     <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image13.PNG" alt="#">
-    </div>
-     <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image14.PNG" alt="#">
-    </div>
-     <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image15.PNG" alt="#">
-    </div>
-     <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image16.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image17.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image18.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image19.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image20.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image6.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image8.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image7.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image20.PNG" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image21.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/image22.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/peto1.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/peto2.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/peto3.jpg" alt="#">
-    </div>
-    <div class="tarjeta pro-1">
-      <img class="project-image" src="./Imagenes/talabarteria/peto4.jpg" alt="#">
-    </div>
-  </div>
-  <button id="verMasBtn" class="ver-mas-btn">Ver más</button>
-  
-      <h1>Categor&iacute;a de productos</h1>
-      <div class="content-grid">
-        <a href="./analgesicos-antiflamatorios/" class="project-title">
-          <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/analgesicos-y-antiflamatorios/p1.jpg" alt="">
-          <p class="textimg">ANALGÉSICOS Y ANTINFLAMATORIOS</p>
-          <p class="subtitles">Productos inyectables</p>
-          <div class="contenido ingresar">
-            <p class="project-title more">Ingresar aqui</p>
-          </div>
-        </div>
-        </a>
-      
-      <a href="./cuidado-articular-muscular/"  class="project project-title">
-        <div class="tarjeta pro">
-          <img class="project-image" src="./Imagenes/cuidado-articular-y-muscular/p1.jpg" alt="#">
-          <p class="textimg">CUIDADO ARTICULAR Y MUSCULAR</p>
-          <p class="subtitles">Productos tópicos</p>
-          <div class="contenido ingresar">
-            <p class="project-title more">Ingresar aqui</p>
-          </div>
-        </div>
+    </nav>
+    <header id="header">
+      <a href="./index.html" class="logo">
+        <img src="./Imagenes/caballo-bronce-c.png" alt="logo del caballo">
       </a>
-
-        <a href="./tratamientos-hormonales/"  class="project project-title">
-              <div class="tarjeta pro">
+    </header>
+    <main>
+      <section class="categories">
+        <button type="button" title="Go left" onclick="moveCarouselLeft()" class="arrow-left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button type="button" title="Go right" onclick="moveCarouselRight()" class="arrow-right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="carousel">
+          <div id="carousel" class="carousel-frame carr-pos-1">
+            <div class="carousel-element">
+              <img src="./Imagenes/cowboy.png" alt="#">
+              <div class="carousel-element-info">
+                <a href="./cuidado-articular-muscular/">
+                <h2 class="words">Arte, originalidad y calidad, tres palabras que definen a PARA TU CABALLO </h2>
+                <p class="slidertext"><strong><em>"Lo que usan los campeones"</em></strong></p>
+              </a>
+              </div>
+            </div>
+            <div class="carousel-element">
+              <img src="./Imagenes/craneo1.png" alt="#">
+              <div class="carousel-element-info">
+                <a href="./suplementos-orales/">
+                <h2 class="words">Contamos con todos los medicamentos y aperos necesarias para mejorar el PERFORMANCE de tu caballo</h2>
+                <p class="slidertext"><strong><em>"Lo que usan los campeones"</em></strong></p>
+              </a>
+              </div>
+            </div>
+            <div class="carousel-element">
+              <div class="carousel-element-info">
+                <a href="./cuidado-de-cascos/">
+                <h2 class="words">Nos encargamos de la salud de tu caballo, y por eso te ofrecemos los mejores productos para su recuperación, medicina con efecto analgésico, antiséptico y antiinflamatorio</h2>
+                <p class="slidertext"><strong><em>"Lo que usan los campeones"</em></strong></p>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-section">
+        <h1>Nuestros Petos Destacados</h1>
+        <div class="carousel-content">
+          <div class="carousel-arrows">
+            <button class="arrow left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="carousel-petos">
+            <div class="carousel-track">
+              <img src="/Imagenes/peto1.jpg" alt="Imagen 1">
+              <img src="/Imagenes/peto2.jpg" alt="Imagen 2">
+              <img src="/Imagenes/peto3.jpg" alt="Imagen 3">
+              <img src="/Imagenes/peto4.jpg" alt="Imagen 4">
+              <img src="/Imagenes/peto5.jpg" alt="Imagen 5">
+              <img src="/Imagenes/peto6.jpg" alt="Imagen 6">
+              <img src="/Imagenes/peto7.jpg" alt="Imagen 7">
+              <img src="/Imagenes/peto8.jpg" alt="Imagen 8">
+              <img src="/Imagenes/peto9.jpg" alt="Imagen 9">
+              <img src="/Imagenes/peto10.jpg" alt="Imagen 10">
+              <img src="/Imagenes/peto11.jpg" alt="imagen 11">
+              <img src="/Imagenes/peto12.jpg" alt="imagen 12">
+              <img src="/Imagenes/peto13.jpg" alt="imagen 13">
+              <img src="/Imagenes/peto14.jpg" alt="imagen 14">
+              <img src="/Imagenes/peto15.jpg" alt="imagen 15">
+              <img src="/Imagenes/peto16.jpg" alt="imagen 16">
+              <img src="/Imagenes/peto17.jpg" alt="imagen 17">
+              <img src="/Imagenes/peto18.jpg" alt="imagen 18">
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <h1>Talabartería</h1>
+        <div class="block-content">
+          <p class="content-text">Somos talabarteria, 
+            una empresa manufacturera donde trabajamos y fabricamos artículos de cuero, desde objetos utilitarios hasta elementos para el deporte western y coleo. 
+            Nuestra mano de obra tiene 35 años de experiencia en el mercado nacional.
+            Contamos con una virtud muy especial que somos caballistas y entendemos las necesidades del cliente.<br><br>Estamos
+            comprometidos con la elaboración artesanal de artículos en cuero que combinan tradición, calidad y estilo.
+            Cada pieza es cuidadosamente diseñada para cumplir con los más altos estándares,
+            tanto en funcionalidad como en estética.</p>
+          <img src="./Imagenes/talabarteria/poster.jpg" alt="img">
+        </div>
+        <h1>Cabezadas</h1>
+        <div class="carousel-content">
+          <div class="carousel-arrows">
+            <button class="arrow left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="carousel-petos">
+            <div class="carousel-track">
+              <img src="/Imagenes/pic3.jpg" alt="Imagen 3">
+              <img src="/Imagenes/pic4.jpg" alt="Imagen 4">
+              <img src="./Imagenes/talabarteria/image1.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image3.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image4.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image5.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image13.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image14.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image15.PNG" alt="">
+              <img src="./Imagenes/talabarteria/image16.PNG" alt="">
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <h1>Jaquimas y sillas</h1>      
+        <div class="content-grid">
+           <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/pic1.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/pic2.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/silla2.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image17.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image18.PNG" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image19.PNG" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image20.PNG" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image6.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image8.PNG" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image7.PNG" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image20.PNG" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image21.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/image22.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/peto1.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/peto2.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/peto3.jpg" alt="#">
+          </div>
+          <div class="tarjeta pro-1">
+            <img class="project-image" src="./Imagenes/talabarteria/peto4.jpg" alt="#">
+          </div>
+        </div>
+        <button id="verMasBtn" class="ver-mas-btn">Ver más</button>
+        <h1>Categor&iacute;a de productos</h1>
+        <div class="content-grid">
+          <a href="./analgesicos-antiflamatorios/" class="project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/analgesicos-y-antiflamatorios/p1.jpg" alt="">
+              <p class="textimg">ANALGÉSICOS Y ANTINFLAMATORIOS</p>
+              <p class="subtitles">Productos inyectables</p>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a>
+          <a href="./cuidado-articular-muscular/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/cuidado-articular-y-muscular/p1.jpg" alt="#">
+              <p class="textimg">CUIDADO ARTICULAR Y MUSCULAR</p>
+              <p class="subtitles">Productos tópicos</p>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a>
+          <a href="./tratamientos-hormonales/"  class="project project-title">
+            <div class="tarjeta pro">
               <img class="project-image" src="./Imagenes/tratamientos-hormonales/p1.jpg" alt="#">
-            <p class="textimg">TRATAMIENTOS HORMONALES</p>
-            <p class="subtitles">Productos en solución inyectable</p>
-            <div class="contenido ingresar">
-              <p class="project-title more">Ingresar aqui</p>
+              <p class="textimg">TRATAMIENTOS HORMONALES</p>
+              <p class="subtitles">Productos en solución inyectable</p>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
             </div>
-            </div>
-        </a>
-
-        <a href="./cuidado-de-cascos/"  class="project project-title">
-              <div class="tarjeta pro">
+          </a>
+          <a href="./cuidado-de-cascos/"  class="project project-title">
+            <div class="tarjeta pro">
               <img class="project-image" src="./Imagenes/cuidados-de-los-cascos/p1.jpg" alt="#">
               <p class="textimg">CUIDADO DE LOS CASCOS</p>
               <p class="subtitles">Productos de uso tópico</p>
               <div class="contenido ingresar">
-              <p class="project-title more">Ingresar aqui</p>
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
             </div>
-            </div>
-        </a>
-
-        <a href="./cuidado-del-tracto-digestivo/"  class="project project-title">
+          </a>
+          <a href="./cuidado-del-tracto-digestivo/"  class="project project-title">
+              <div class="tarjeta pro">
+                <img class="project-image" src="./Imagenes/cuidado-del-tracto-digestivo/p1.jpg" alt="#">
+                <p class="textimg">CUIDADO DEL TRACTO DIGESTIVO</p>
+                <p class="subtitles">Productos de uso oral</p>
+                <div class="contenido ingresar">
+                  <p class="project-title more">Ingresar aqui</p>
+                </div>
+              </div>
+          </a>
+          <a href="./coadyuvantes-del-sistema-respiratorio/"  class="project project-title">
             <div class="tarjeta pro">
-              <img class="project-image" src="./Imagenes/cuidado-del-tracto-digestivo/p1.jpg" alt="#">
-              <p class="textimg">CUIDADO DEL TRACTO DIGESTIVO</p>
+              <img class="project-image" src="./Imagenes/coadyuvantes-del-sistema-respiratorio/p1.jpg" alt="#">
+              <p class="textimg">COADYUVANTES DEL SISTEMA RESPIRATORIO</p>
               <p class="subtitles">Productos de uso oral</p>
               <div class="contenido ingresar">
-              <p class="project-title more">Ingresar aqui</p>
-          </div>
-          </div>
-        </a>
-        
-        <a href="./coadyuvantes-del-sistema-respiratorio/"  class="project project-title">
-          <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/coadyuvantes-del-sistema-respiratorio/p1.jpg" alt="#">
-            <p class="textimg">COADYUVANTES DEL SISTEMA RESPIRATORIO</p>
-            <p class="subtitles">Productos de uso oral</p>
-            <div class="contenido ingresar">
-              <p class="project-title more">Ingresar aqui</p>
-            </div>
-          </div>
-        </a>
-        
-        <a href="./repelentes-ectoparasiticidas/"  class="project project-title">
-            <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/repelentes-y-ectoparasiticidas/p1.jpg" alt="#">
-          <p class="textimg">REPELENTES Y ECTOPARASITICIDAS</p>
-          <p class="subtitles">Productos de uso tópico</p>
-          <div class="contenido ingresar">
-            <p class="project-title more">Ingresar aqui</p>
-          </div>
-          </div>
-        </a>
-
-        <a href="./suplementos-inyectables/"  class="project project-title">
-            <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/suplementos-inyectables/p1.jpg" alt="#">
-          <p class="textimg">SUPLEMENTOS INYECTABLES</p>
-          <p class="subtitles">Productos en solución inyectable</p>
-          <div class="contenido ingresar">
-            <p class="project-title more">Ingresar aqui</p>
-          </div>
-          </div>
-        </a>
-        <a href="./desparasitantes-orales/"  class="project project-title">
-          <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/desparasitantes-orales/p1.jpg" alt="#">
-            <p class="textimg">DESPARASITANTES ORALES</p>
-            <p class="subtitles">Productos de uso oral</p>
-            <div class="contenido ingresar">
-              <p class="project-title more">Ingresar aqui</p>
-            </div>
-          </div>
-        </a>
-        
-        <a href="./hemoparasiticidas/"  class="project project-title">
-          <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/productos/imi001.jpg" alt="#">
-            <p class="textimg">HEMOPARASITICIDAS</p>
-            <p class="subtitles">Productos en solución inyectable</p>
-            <div>
-              <span>espacio</span>
-            </div>
-            <div class="contenido ingresar">
-              <p class="project-title more">Ingresar aqui</p>
-            </div>
-          </div>
-        </a>
-        
-        <a href="./cuidados-de-piel/"  class="project project-title">
-          <div class="tarjeta pro">
-            <img class="project-image" src="./Imagenes/cuidado-de-la-piel/p1.jpg" alt="#">
-            <p class="textimg">CUIDADO DE LA PIEL</p>
-                <p class="subtitles">Productos de uso tópico</p>
-                <div>
-                  <span>espacio</span>
-                </div>
-                <div class="contenido ingresar">
-                  <p class="project-title more">Ingresar aqui</p>
-                </div>
+                <p class="project-title more">Ingresar aqui</p>
               </div>
-            </a>
-            
-            <a href="./sets/"  class="project project-title">
+            </div>
+          </a> 
+          <a href="./repelentes-ectoparasiticidas/"  class="project project-title">
               <div class="tarjeta pro">
-                <img class="project-image" src="./Imagenes/SETS/set1.JPG" alt="#">
-                <p class="textimg">Sets</p>
-                <p class="subtitles">Lo que usan los campenos</p>
-                <div>
-                  <span>espacio</span>
-                </div>
-                <div class="contenido ingresar">
-                  <p class="project-title more">Ingresar aqui</p>
-                </div>
+              <img class="project-image" src="./Imagenes/repelentes-y-ectoparasiticidas/p1.jpg" alt="#">
+            <p class="textimg">REPELENTES Y ECTOPARASITICIDAS</p>
+            <p class="subtitles">Productos de uso tópico</p>
+            <div class="contenido ingresar">
+              <p class="project-title more">Ingresar aqui</p>
+            </div>
+            </div>
+          </a>
+          <a href="./suplementos-inyectables/"  class="project project-title">
+              <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/suplementos-inyectables/p1.jpg" alt="#">
+            <p class="textimg">SUPLEMENTOS INYECTABLES</p>
+            <p class="subtitles">Productos en solución inyectable</p>
+            <div class="contenido ingresar">
+              <p class="project-title more">Ingresar aqui</p>
+            </div>
+            </div>
+          </a>
+          <a href="./desparasitantes-orales/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/desparasitantes-orales/p1.jpg" alt="#">
+              <p class="textimg">DESPARASITANTES ORALES</p>
+              <p class="subtitles">Productos de uso oral</p>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
               </div>
+            </div>
+          </a>
+          <a href="./hemoparasiticidas/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/productos/imi001.jpg" alt="#">
+              <p class="textimg">HEMOPARASITICIDAS</p>
+              <p class="subtitles">Productos en solución inyectable</p>
+              <div>
+                <span>espacio</span>
+              </div>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a> 
+          <a href="./cuidados-de-piel/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/cuidado-de-la-piel/p1.jpg" alt="#">
+              <p class="textimg">CUIDADO DE LA PIEL</p>
+              <p class="subtitles">Productos de uso tópico</p>
+              <div>
+                <span>espacio</span>
+              </div>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a>
+          <a href="./sets/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/SETS/set1.JPG" alt="#">
+              <p class="textimg">Sets</p>
+              <p class="subtitles">Lo que usan los campenos</p>
+              <div>
+                <span>espacio</span>
+              </div>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a>
+          <a href="./suplementos-orales/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/suplementos-orales/p1.jpg" alt="#">
+              <p class="textimg">SUPLEMENTOS ORALES</p>
+              <p class="subtitles">Productos en pellets polvos pastas y liquidos</p>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a>
+          <a href="./limpieza-y-cuidados-de-cuero/"  class="project project-title">
+            <div class="tarjeta pro">
+              <img class="project-image" src="./Imagenes/limpieza-y-cuidados-del-cuero-y-de-los-aperos/p1.jpg" alt="#">
+              <p class="textimg">LIMPIEZA Y CUIDADOS DEL CUERO</p>
+              <p class="subtitles">Productos en crema</p>
+              <div class="contenido ingresar">
+                <p class="project-title more">Ingresar aqui</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="lab">
+        <h1>Nuestras marcas</h1>
+        <div class="content-logo">
+            <div class="logos1">  <a href="./cuidado-de-cascos/">
+              <img src="./Imagenes/Laboratorios/absorvine.jpg" alt="">
+            </div>
+          </a>
+          <a href="./analgesicos-antiflamatorios/">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/calbos.png" alt="">
+            </div>
+          </a>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/chinfield.jpeg" alt="">
+            </div>
+          </a>
+          <a href="./repelentes-ectoparasiticidas/">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/farnam.jpg" alt="">
+            </div>
+          </a>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/line1.jpg" alt="">
+            </div>
+          </a>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/vimofarm.jpg" alt="">
+            </div>
+          </a>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/forra.jpg" alt="">
+            </div>
+          </a>
+          <a href="./suplementos-inyectables/">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/usa.png" alt="">
+            </div>
+          </a>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/nutri.jpg" alt="">
+            </div>
+          </a>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/chioce.png" alt="">
+            </div>
+          </a>
+          <div class="whatsapp-btn">
+            <a 
+              href="https://wa.me/+584145085416?text=Hola%2C%20lo%20estoy%20contactando%20desde%20su%20p%C3%A1gina%20web%20Para%20Tu%20Caballo.%20Requiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos." 
+              target="_blank">
+              <i class="fa-brands fa-whatsapp" style="color: #119213;"></i>
             </a>
-            
-            
-        <a href="./suplementos-orales/"  class="project project-title">
-            <div class="tarjeta pro">
-                    <img class="project-image" src="./Imagenes/suplementos-orales/p1.jpg" alt="#">
-                  <p class="textimg">SUPLEMENTOS ORALES</p>
-                  <p class="subtitles">Productos en pellets polvos pastas y liquidos</p>
-                  <div class="contenido ingresar">
-                    <p class="project-title more">Ingresar aqui</p>
-                  </div>
-                </div>
+          </div>
+          <a href="">
+            <div class="logos1">
+              <img src="./Imagenes/Laboratorios/viterra-logo.jpg" alt="">
+            </div>
           </a>
-
-        <a href="./limpieza-y-cuidados-de-cuero/"  class="project project-title">
-            <div class="tarjeta pro">
-                    <img class="project-image" src="./Imagenes/limpieza-y-cuidados-del-cuero-y-de-los-aperos/p1.jpg" alt="#">
-                  <p class="textimg">LIMPIEZA Y CUIDADOS DEL CUERO</p>
-                  <p class="subtitles">Productos en crema</p>
-                <div class="contenido ingresar">
-                  <p class="project-title more">Ingresar aqui</p>
-                </div>
-              </div>
-          </a>
+        </div>
+      </section>
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="">
       </div>
-  </section>
-<section class="lab">
-  <h1>Nuestras marcas</h1>
-  <div class="content-logo">
-    <div class="logos1">  <a href="./cuidado-de-cascos/">
-    <img src="./Imagenes/Laboratorios/absorvine.jpg" alt="">
-  </div>
-  </a>
-
-  <a href="./analgesicos-antiflamatorios/">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/calbos.png" alt="">
-  </div>
-  </a>
-
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/chinfield.jpeg" alt="">
-  </div>
-  </a>
-
-  <a href="./repelentes-ectoparasiticidas/">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/farnam.jpg" alt="">
-  </div>
-  </a>
-
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/line1.jpg" alt="">
-  </div>
-  </a>
-
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/vimofarm.jpg" alt="">
-  </div>
-  </a>
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/forra.jpg" alt="">
-  </div>
-  </a>
-  <a href="./suplementos-inyectables/">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/usa.png" alt="">
-  </div>
-  </a>
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/nutri.jpg" alt="">
-  </div>
-  </a>
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/chioce.png" alt="">
-  </div>
-  </a>
-<div class="whatsapp-btn">
-  <a 
-    href="https://wa.me/+584145085416?text=Hola%2C%20lo%20estoy%20contactando%20desde%20su%20p%C3%A1gina%20web%20Para%20Tu%20Caballo.%20Requiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos." 
-    target="_blank"
-  >
-    <i class="fa-brands fa-whatsapp" style="color: #119213;"></i>
-  </a>
-</div>
-
-  <a href="">
-    <div class="logos1">
-    <img src="./Imagenes/Laboratorios/viterra-logo.jpg" alt="">
-  </div>
-  </a>
-
-</div>
-
-</section>
-<div id="imageModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImg" alt="">
-</div>
-
-  <div class="video">
-<iframe src="https://www.youtube.com/embed/gasNyfE61uw?si=suJJO51GkIXyPRbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" all    owfullscreen autoplay></iframe>
-</div>
-
-<section class="content-section">
-  <div>
-    <a href="./index.html">
-    <img class="logo-footer"src="./Imagenes/footer/IMG-6148.png" alt="#">
-  </a>
-</div>
-  <div class="grid">
-    
-  <div class="contact-info">
-  <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
-  <p>Realizamos envios a nivel nacional por ZOOM business</p>
-  </div>
-</div>
-  <div class="grid">
-  <div class="info">
-    <ul>
-   <li><a class="footer-info" href="./productos/index.html">Productos</a></li>
-   <li><a class="footer-info" href="./nosotros/index.html">Nosotros</a></li>
-   <li><a class="footer-info" href="./contacto/index.html">Contacto</a></li>
-    </ul>
-  </div>
-</div>
-<div class="grid">
-  <div class="pagos">
-    <h3>Metodos de pagos</h3>
-    <p class="letter">Contra entrega</p>
-    <p class="letter">Pago movil</p>
-    <p class="letter">Zelle</p>
-    <i class="fa-brands fa-cc-visa"></i>
-    <i class="fa-brands fa-cc-mastercard"></i>
-    <i class="fa-regular fa-handshake"></i>
-  </div>
-</div>
-<div class="grid">
-  <div class="pagos">
-    <h3>horarios de atención</h3>
-    <p class="letter">Lunes a Sabados</p>
-    <p class="letter">9 am - 5pm</p>
-  </div>
-</div>
-</section>
-<footer id="end">
-<p class="horse">© Para Tu Caballo 2024</p>
-<a class="const" href="./politicas-de-privacidad/politicas.html">Politicas de privacidad</a>
-<div>
-  <a href="./Condiciones-del-servicio/condiciones.html">Condiciones del servicio</a>
-</div>
-<div class="contact-link">
-
-  <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-</div>
-</footer>
-</main>
-<script src="main.js">
-</script>
-</body>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/gasNyfE61uw?si=suJJO51GkIXyPRbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay></iframe>
+      </div>
+      <section class="content-section">
+        <div class="grid">
+          <a href="./index.html">
+            <img class="logo-footer"src="./Imagenes/footer/IMG-6148.png" alt="#">
+          </a>
+        </div>
+        <div class="grid"> 
+          <div class="contact-info">
+            <p>Productos de alta calidad que llevamos a eventos en toda Venezuela</p>
+            <p>Realizamos envios a nivel nacional por ZOOM business</p>
+          </div>
+        </div>
+        <!-- <div class="grid">
+          <div class="info">
+            <ul>
+              <li><a class="footer-info" href="./productos/index.html">Productos</a></li>
+              <li><a class="footer-info" href="./nosotros/index.html">Nosotros</a></li>
+              <li><a class="footer-info" href="./contacto/index.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div> -->
+        <div class="grid">
+            <h3>Metodos de pagos</h3>
+            <p class="letter">Contra entrega</p>
+            <p class="letter">Pago movil</p>
+            <p class="letter">Zelle</p>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-regular fa-handshake"></i>
+        </div>
+        <div class="grid">
+          <h3>horarios de atención</h3>
+          <p class="letter">Lunes a Sabados</p>
+          <p class="letter">9 am - 5pm</p>
+        </div>
+         <div class="grid">
+          <p class="develop-content">Desarrollado por:  <a href="https://luissanteliz.dev" target="_blank">Luis Santeliz</a></p>
+        </div>
+      </section>
+      <footer id="end">
+        <p class="horse">© Para Tu Caballo 2024</p>
+        <a class="const" href="./politicas-de-privacidad/politicas.html">Politicas de privacidad</a>
+        <div>
+          <a href="./Condiciones-del-servicio/condiciones.html">Condiciones del servicio</a>
+        </div>
+        <div class="contact-link">
+          <a href="https://www.instagram.com/paratucaballo" target="_blank" class="btn contact-details">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
