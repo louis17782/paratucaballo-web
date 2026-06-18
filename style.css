@@ -32,6 +32,10 @@ body {
   background-attachment: fixed;
   background-position: center; 
 }
+
+h2{
+  text-align: center;
+}
 .slidertext {
   color: #fff;
 }
