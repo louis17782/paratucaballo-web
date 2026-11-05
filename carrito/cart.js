@@ -185,26 +185,37 @@ const submitOrder = (event) => {
     },
   };
 
-  postSubmission(submissionParams)
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.errors) throw new Error('No pudimos procesar su orden, por favor inténtelo más tarde.');
-      if (useCart().length < 1) throw new Error('El carrito esta vacío, añada un producto al carrito');
+postSubmission(submissionParams)
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.errors) throw new Error('No pudimos procesar su orden, por favor inténtelo más tarde.');
+    if (useCart().length < 1) throw new Error('El carrito esta vacío, añada un producto al carrito');
 
-      const messageNotification = document.createElement('p');
-      messageNotification.classList.add('cart-item');
+    // --- INICIO DEL TAG DE GOOGLE ADS ---
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18554202101/kjooCNiK1bIdEPXPqo9F',
+          'value': 1.0,
+          'currency': 'USD',
+          'transaction_id': data.orderId || '' // Opcional: si tu backend devuelve un ID de orden, ponlo aquí
+      });
+    }
+    // --- FIN DEL TAG DE GOOGLE ADS ---
 
-      const message = document.createTextNode('Estamos procesando tu orden');
-  
-      messageNotification.appendChild(message);
-      
-      const form = document.getElementById('order-form');
+    const messageNotification = document.createElement('p');
+    messageNotification.classList.add('cart-item');
 
-      form.innerHTML = '';
-      form.appendChild(message);
+    const message = document.createTextNode('Estamos procesando tu orden');
 
-      localStorage.clear();
-    }).catch((error) => alert(error));
+    messageNotification.appendChild(message);
+    
+    const form = document.getElementById('order-form');
+
+    form.innerHTML = '';
+    form.appendChild(messageNotification);
+
+    localStorage.clear();
+  }).catch((error) => alert(error));
 }
 
 const form = document.getElementById('order-form');
